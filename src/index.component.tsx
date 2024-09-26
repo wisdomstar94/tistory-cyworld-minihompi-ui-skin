@@ -1,6 +1,5 @@
+import { MainContainer } from "./components/layouts/main-container/main-container.component";
 import "./index.scss";
-import { HelloWorld } from "@/components/hello-world/hello-world.component";
-import { Script } from "@/components/script/script.component";
 
 export default function App() {
   return (
@@ -14,15 +13,7 @@ export default function App() {
         <title></title>
       </head>
       <body>
-        <HelloWorld />
-        <Script
-          html={`
-            (function(){
-                const pathname = location.pathname;
-                console.log('pathname', pathname);
-            })();
-        `}
-        />
+        <MainContainer />
       </body>
     </html>
   );
