@@ -20,7 +20,15 @@ export function MainContainer() {
             className="w-full h-full absolute top-0 left-0 z-[-1]"
           >
             <div className="w-full h-full box-border p-6">
-              <div className="w-full h-full border border-dashed border-color-2 rounded-xl"></div>
+              <div
+                // className="w-full h-full border border-dashed border-color-2 rounded-xl"
+                className="w-full h-full rounded-xl flex"
+              >
+                {/* left */}
+                <div className="w-[366px] h-full border-l border-t border-b border-dashed border-color-2 rounded-xl"></div>
+                {/* right */}
+                <div className="w-full h-full border-r border-t border-b border-dashed border-color-2 rounded-xl"></div>
+              </div>
             </div>
           </div>
 
