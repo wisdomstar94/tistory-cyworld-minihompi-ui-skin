@@ -1,3 +1,5 @@
+import { cn } from "@/utils/cn";
+
 export function MainContainer() {
   return (
     <>
@@ -10,7 +12,7 @@ export function MainContainer() {
           >
             <div className="w-full h-full relative flex">
               <div className="w-[270px] flex-shrink-0 flex-grow-0 bg-color-1 rounded-xl"></div>
-              <div className="min-w-0 w-full bg-color-1 rounded-xl"></div>
+              <div className="min-w-0 w-full bg-color-1 rounded-xl ml-[-1px]"></div>
             </div>
           </div>
 
@@ -47,7 +49,21 @@ export function MainContainer() {
 
           {/* content */}
           <div className="w-full h-full relative box-border p-10">
-            <div className="w-full h-full bg-blue-500/50"></div>
+            <div className="w-full h-full flex gap-4 relative">
+              {/* grid... */}
+              <div
+                className={cn(
+                  "w-full h-full relative",
+                  "grid grid-cols-[222px_1fr] grid-rows-[auto_1fr] gap-4 auto-rows-auto"
+                  //
+                )}
+              >
+                <div className="min-w-0 min-h-0">1</div>
+                <div className="min-w-0 min-h-0">2</div>
+                <div className="min-w-0 min-h-0">3</div>
+                <div className="min-w-0 min-h-0">4</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
