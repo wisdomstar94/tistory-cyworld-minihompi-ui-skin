@@ -49,6 +49,30 @@ export function MainContainer() {
             </div>
           </div>
 
+          {/* bg ring container */}
+          <div
+            data-title="bg-ring-1"
+            className="w-[1px] h-[314px] absolute top-[112px] left-[270px] z-[1] flex flex-col justify-between"
+          >
+            <div className="flex flex-col gap-10 relative items-center w-full">
+              <div className="w-[38px] h-[12px] bg-color-6 border flex-shrink-0 flex-grow-0 border-color-3/30 rounded-3xl overflow-hidden relative">
+                <div className="w-[40%] h-full bg-color-3/15"></div>
+              </div>
+              <div className="w-[38px] h-[12px] bg-color-6 border flex-shrink-0 flex-grow-0 border-color-3/30 rounded-3xl overflow-hidden relative">
+                <div className="w-[40%] h-full bg-color-3/15"></div>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-10 relative items-center w-full">
+              <div className="w-[38px] h-[12px] bg-color-6 border flex-shrink-0 flex-grow-0 border-color-3/30 rounded-3xl overflow-hidden relative">
+                <div className="w-[40%] h-full bg-color-3/15"></div>
+              </div>
+              <div className="w-[38px] h-[12px] bg-color-6 border flex-shrink-0 flex-grow-0 border-color-3/30 rounded-3xl overflow-hidden relative">
+                <div className="w-[40%] h-full bg-color-3/15"></div>
+              </div>
+            </div>
+          </div>
+
           {/* content */}
           <div className="w-full h-full relative box-border p-10">
             <div className="w-full h-full flex gap-4 relative">
