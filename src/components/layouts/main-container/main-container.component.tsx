@@ -84,38 +84,41 @@ export function MainContainer() {
                   //
                 )}
               >
-                {/* 1 */}
-                <div className="min-w-0 min-h-0 relative flex items-stretch">
-                  <s_sidebar>
+                <s_sidebar>
+                  {/* 1 */}
+                  <div className="min-w-0 min-h-0 relative flex items-stretch">
                     <s_sidebar_element>
                       <tt_html_comment>방문자 수</tt_html_comment>
-                      <div className="w-full flex relative items-end text-xs justify-center pt-2">
-                        <div className="flex items-center gap-6 scale-y-[0.9]">
+                      <div className="w-full flex relative items-end text-xs justify-center pt-3">
+                        <div className="flex items-center gap-5 scale-y-[0.9]">
                           <div className="inline-flex gap-2 relative">
-                            <label>TODAY</label>
-                            <div className="font-bold text-color-4">
+                            <label className="tracking-tighter">TODAY</label>
+                            <div className="font-bold tracking-tighter text-color-4">
                               [##_count_today_##]
                             </div>
                           </div>
                           <div className="w-[2px] h-[12px] bg-black"></div>
                           <div className="inline-flex gap-2 relative">
-                            <label>TOTAL</label>
-                            <div className="font-bold">[##_count_total_##]</div>
+                            <label className="tracking-tighter">TOTAL</label>
+                            <div className="font-bold tracking-tighter">
+                              [##_count_total_##]
+                            </div>
                           </div>
                         </div>
                       </div>
                     </s_sidebar_element>
-                  </s_sidebar>
-                </div>
+                  </div>
 
-                {/* 2 */}
-                <div className="min-w-0 min-h-0"></div>
+                  {/* 2 */}
+                  <div className="min-w-0 min-h-0 relative flex items-end">
+                    <div className="w-full block pl-2 font-bold text-lg leading-5 text-color-1 overflow-hidden whitespace-nowrap overflow-ellipsis">
+                      [##_title_##]
+                    </div>
+                  </div>
 
-                {/* 3 */}
-                <s_sidebar>
+                  {/* 3 */}
                   <div className="min-w-0 min-h-0">
                     <div className="w-full h-full box-border px-1.5 py-2.5 border border-color-3/30 bg-color-3/10 rounded-xl">
-                      {/* grid */}
                       <div className="w-full h-full bg-color-2 rounded-lg box-border py-1.5 px-2.5 overflow-y-auto flex flex-col gap-1.5 items-start content-start">
                         {/* 프로필 */}
                         <s_sidebar_element>
@@ -133,6 +136,7 @@ export function MainContainer() {
                         </s_sidebar_element>
 
                         <div className="w-full h-[1px] flex-shrink-0 flex-grow-0 bg-color-3/10" />
+
                         {/* TODAY IS ... */}
                         <div className="w-full border box-border border-color-3/10 rounded-sm p-1 text-sm flex flex-shrink-0 flex-grow-0 justify-center items-center">
                           <div className="inline-flex gap-2">
@@ -175,14 +179,25 @@ export function MainContainer() {
                             </div>
                           </div>
                         </div>
+
                         {/* 블로그 설명 */}
-                        <div className="w-full h-[100px] flex-shrink-0 flex-grow-0 gap-1 relative overflow-y-auto box-border">
+                        <div className="w-full h-[50px] flex-shrink-0 flex-grow-0 gap-1 relative overflow-y-auto box-border">
                           <div className="w-full text-xs min-w-0 min-h-0">
                             [##_desc_##]
                           </div>
 
                           {/* <div className="min-w-0 min-h-0"></div> */}
                         </div>
+
+                        <div className="w-full" />
+
+                        <div className="w-full flex-shrink-0 flex-grow-0 flex flex-col gap-1 relative">
+                          <TitleBar>Profile Name</TitleBar>
+                          <div className="w-full text-xs block whitespace-nowrap overflow-hidden overflow-ellipsis text-color-1 font-medium">
+                            [##_blogger_##]
+                          </div>
+                        </div>
+
                         <div className="w-full" />
 
                         <s_sidebar_element>
@@ -217,10 +232,14 @@ export function MainContainer() {
                       </div>
                     </div>
                   </div>
-                </s_sidebar>
 
-                {/* 4 */}
-                <div className="min-w-0 min-h-0">4</div>
+                  {/* 4 */}
+                  <div className="min-w-0 min-h-0 relative">
+                    <div className="w-full h-full box-border px-1.5 py-2.5 border border-color-3/30 bg-color-2 rounded-xl">
+                      hi
+                    </div>
+                  </div>
+                </s_sidebar>
               </div>
             </div>
           </div>
