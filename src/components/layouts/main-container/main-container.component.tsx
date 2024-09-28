@@ -1,4 +1,5 @@
 import { TitleBar } from "@/components/title-bar/title-bar.component";
+import { TitleBar2 } from "@/components/title-bar2/title-bar2.component";
 import { Var } from "@/consts/torytis-variable-object";
 import { cn } from "@/utils/cn";
 
@@ -150,31 +151,37 @@ export function MainContainer() {
                               )}
                             >
                               <span className="hidden today_is_not_bad:inline-block">
-                                보통
+                                😐 보통
                               </span>
                               <span className="hidden today_is_good:inline-block">
-                                좋음
+                                🙂 좋음
+                              </span>
+                              <span className="hidden today_is_pleasure:inline-block">
+                                🎶 즐거움
+                              </span>
+                              <span className="hidden today_is_happy:inline-block">
+                                😄 행복함
                               </span>
                               <span className="hidden today_is_sad:inline-block">
-                                슬픔
+                                😢 슬픔
                               </span>
                               <span className="hidden today_is_soso:inline-block">
-                                그럭저럭
+                                🫤 그럭저럭
                               </span>
                               <span className="hidden today_is_blue:inline-block">
-                                우울
+                                😟 우울
                               </span>
                               <span className="hidden today_is_angry:inline-block">
-                                화남
+                                😡 화남
                               </span>
                               <span className="hidden today_is_flutter:inline-block">
-                                설렘
+                                😊 설렘
                               </span>
                               <span className="hidden today_is_expect:inline-block">
-                                기대
+                                🥺 기대
                               </span>
                               <span className="hidden today_is_annoying:inline-block">
-                                짜증
+                                😖 짜증
                               </span>
                             </div>
                           </div>
@@ -235,8 +242,48 @@ export function MainContainer() {
 
                   {/* 4 */}
                   <div className="min-w-0 min-h-0 relative">
-                    <div className="w-full h-full box-border px-1.5 py-2.5 border border-color-3/30 bg-color-2 rounded-xl">
-                      hi
+                    <div className="w-full h-full box-border pl-5 pr-2 py-2.5 border border-color-3/30 bg-color-2 rounded-xl">
+                      <div className="w-full h-full overflow-y-auto relative">
+                        <div className="w-full grid grid-cols-2 gap-2 relative">
+                          <s_sidebar_element>
+                            <tt_html_comment>최근 게시물</tt_html_comment>
+                            <div className="min-w-0 min-h-0 relative flex flex-wrap gap-1">
+                              <TitleBar2>최근 게시물</TitleBar2>
+                              <div className="w-full relative">
+                                <ul className="w-full flex flex-wrap gap-1 relative other/recent-post-list">
+                                  <s_rctps_rep>
+                                    <li className="w-full block relative">
+                                      <a
+                                        href="[##_rctps_rep_link_##]"
+                                        className="w-full flex items-center gap-1 text-xs group/rctps-rep-a"
+                                      >
+                                        <span className="inline-flex items-center flex-shrink-0 flex-grow-0">
+                                          ·
+                                        </span>
+                                        <div className="w-full flex items-center relative min-w-0 group-hover/rctps-rep-a:underline">
+                                          <div className="w-full block overflow-hidden overflow-ellipsis whitespace-nowrap">
+                                            [##_rctps_rep_title_##]
+                                          </div>
+                                        </div>
+                                        <div className="w-[70px] flex items-center justify-end flex-shrink-0 flex-grow-0 group-hover/rctps-rep-a:underline">
+                                          [##_rctps_rep_simple_date_##]
+                                        </div>
+                                      </a>
+                                    </li>
+                                  </s_rctps_rep>
+                                </ul>
+                                <div className="block other-has-[li]/recent-post-list:hidden text-xs text-color-3/50">
+                                  등록된 글이 없습니다.
+                                </div>
+                              </div>
+                            </div>
+                          </s_sidebar_element>
+
+                          <div className="min-w-0 min-h-0 relative flex flex-wrap">
+                            2
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </s_sidebar>

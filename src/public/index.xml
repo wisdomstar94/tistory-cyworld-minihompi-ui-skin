@@ -87,6 +87,8 @@
           [
             {"name":"today_is_not_bad", "label":"보통", "value":"today_is_not_bad"},
             {"name":"today_is_good", "label":"좋음", "value":"today_is_good"},
+            {"name":"today_is_pleasure", "label":"즐거움", "value":"today_is_pleasure"},
+            {"name":"today_is_happy", "label":"행복함", "value":"today_is_happy"},
             {"name":"today_is_sad", "label":"슬픔", "value":"today_is_sad"},
             {"name":"today_is_soso", "label":"그럭저럭", "value":"today_is_soso"},
             {"name":"today_is_blue", "label":"우울", "value":"today_is_blue"},

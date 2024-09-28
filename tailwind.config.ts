@@ -7,6 +7,11 @@ const staticVariantPlugin: PluginCreator = ({ addVariant }) => {
 
   addVariant("today_is_not_bad", [".today_is_not_bad &", ".today_is_not_bad&"]);
   addVariant("today_is_good", [".today_is_good &", ".today_is_good&"]);
+  addVariant("today_is_pleasure", [
+    ".today_is_pleasure &",
+    ".today_is_pleasure&",
+  ]);
+  addVariant("today_is_happy", [".today_is_happy &", ".today_is_happy&"]);
   addVariant("today_is_sad", [".today_is_sad &", ".today_is_sad&"]);
   addVariant("today_is_soso", [".today_is_soso &", ".today_is_soso&"]);
   addVariant("today_is_blue", [".today_is_blue &", ".today_is_blue&"]);
@@ -264,10 +269,32 @@ function generateColorCSSRuleObject(params: {
   return classNameCSSRuleObject;
 }
 
+const otherElementPlugin: PluginCreator = ({ matchVariant }) => {
+  // addVariant('other-hover', ({ modify }))
+  matchVariant("other-hover", (value, extra) => {
+    return [`.other\\/${value}:hover ~ * &`, `.other\\/${value}:hover ~ &`];
+  });
+
+  matchVariant("other-checked", (value, extra) => {
+    return [`.other\\/${value}:checked ~ * &`, `.other\\/${value}:checked ~ &`];
+  });
+
+  matchVariant("other-exist", (value, extra) => {
+    return [`.other\\/${value} ~ * &`, `.other\\/${value} ~ &`];
+  });
+
+  matchVariant("other-has", (value, extra) => {
+    return [
+      `.other\\/${extra.modifier}:has(${value}) ~ * &`,
+      `.other\\/${extra.modifier}:has(${value}) ~ &`,
+    ];
+  });
+};
+
 export default {
   content: ["./src/**/*.{ts,tsx,css,scss}"],
   theme: {
     extend: {},
   },
-  plugins: [staticVariantPlugin, customColorExtendPlugin],
+  plugins: [staticVariantPlugin, customColorExtendPlugin, otherElementPlugin],
 } satisfies Config;
