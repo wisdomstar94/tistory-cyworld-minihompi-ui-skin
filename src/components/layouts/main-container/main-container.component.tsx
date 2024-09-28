@@ -172,11 +172,13 @@ export function MainContainer() {
                                   <li className="w-full block relative">
                                     <a
                                       href="[##_rctrp_rep_link_##]"
-                                      className="w-full flex gap-1 relative group/recent-comment-item"
+                                      className="w-full flex gap-1 relative group/recent-comment-item hover:text-color-1"
                                       title="작성자: [##_rctrp_rep_name_##]"
                                     >
                                       <div className="min-w-0 w-full relative block items-center group-hover/recent-comment-item:underline overflow-ellipsis whitespace-nowrap overflow-hidden">
-                                        [##_rctrp_rep_desc_##]
+                                        <div className="w-full block overflow-ellipsis overflow-hidden whitespace-nowrap">
+                                          [##_rctrp_rep_desc_##]
+                                        </div>
                                       </div>
                                       <div className="w-[40px] flex items-center flex-shrink-0 flex-grow-0 justify-end group-hover/recent-comment-item:underline">
                                         [##_rctrp_rep_time_##]
