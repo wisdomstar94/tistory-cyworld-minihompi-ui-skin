@@ -54,16 +54,17 @@ export function MainContainer() {
               <div
                 className={cn(
                   "w-full h-full relative",
-                  "grid grid-cols-[222px_1fr] grid-rows-[auto_1fr] gap-4 auto-rows-auto"
+                  "grid grid-cols-[222px_1fr] grid-rows-[auto_1fr] gap-y-2 gap-x-4 auto-rows-auto"
                   //
                 )}
               >
+                {/* 1 */}
                 <div className="min-w-0 min-h-0 relative flex items-stretch">
                   <s_sidebar>
                     <s_sidebar_element>
                       <tt_html_comment>방문자 수</tt_html_comment>
-                      <div className="w-full flex relative items-end text-xs justify-center scale-y-[0.9]">
-                        <div className="flex items-center gap-6">
+                      <div className="w-full flex relative items-end text-xs justify-center pt-2">
+                        <div className="flex items-center gap-6 scale-y-[0.9]">
                           <div className="inline-flex gap-2 relative">
                             <label>TODAY</label>
                             <div className="font-bold text-color-4">
@@ -80,8 +81,20 @@ export function MainContainer() {
                     </s_sidebar_element>
                   </s_sidebar>
                 </div>
-                <div className="min-w-0 min-h-0">2</div>
-                <div className="min-w-0 min-h-0">3</div>
+
+                {/* 2 */}
+                <div className="min-w-0 min-h-0"></div>
+
+                {/* 3 */}
+                <div className="min-w-0 min-h-0">
+                  <div className="w-full h-full box-border px-1.5 py-2.5 border border-color-3/30 bg-color-3/10 rounded-xl">
+                    <div className="w-full h-full bg-color-2 rounded-lg">
+                      {/*  */}
+                    </div>
+                  </div>
+                </div>
+
+                {/* 4 */}
                 <div className="min-w-0 min-h-0">4</div>
               </div>
             </div>
