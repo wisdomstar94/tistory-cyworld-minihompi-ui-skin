@@ -75,39 +75,30 @@
     <contentWidth>500</contentWidth>
   </default>
   <variables>
-    <!-- 
-        variables 내용 수정 후에 터미널에 "npm run build:variable" 명령어를 입력하시면, 
-        torytis-variable.d.ts 파일이 생성되며 variable 태그 자동완성이 지원됩니다. 
-    -->
-    <!-- example -->
-    <!-- 
-    <variablegroup name="구글애드센스">
+    <variablegroup name="TODAY IS..">
       <variable>
-        <name>google_adsense_script_url</name>
+        <name>today_is</name>
         <label>
-          <![CDATA[ 구글애드센스 script url ]]>
+          <![CDATA[ 오늘의 기분(TODAY IS) ]]>
         </label>
-        <description>구글애드센스 script url을 입력하세요.</description>
-        <type>STRING</type>
-      </variable>
-    </variablegroup>
-    <variablegroup name="테마">
-      <variable>
-        <name>dark_mode_type</name>
-        <label>
-          <![CDATA[ 다크 모드 타입 ]]>
-        </label>
-        <description>다크 모드를 방문자가 컨트롤 할 수 있도록 할 것인지, 강제로 적용할 것인지에 대한 설정 값입니다.</description>
+        <description>오늘의 기분을 선택하세요.</description>
         <type>SELECT</type>
         <option><![CDATA[
           [
-            {"name":"darkmode_loose", "label":"방문자가 다크모드 컨트롤 가능", "value":"darkmode_loose"},
-            {"name":"darkmode_fixed", "label":"블로그를 항상 다크모드로 고정", "value":"darkmode_fixed"}
+            {"name":"today_is_not_bad", "label":"보통", "value":"today_is_not_bad"},
+            {"name":"today_is_good", "label":"좋음", "value":"today_is_good"},
+            {"name":"today_is_sad", "label":"슬픔", "value":"today_is_sad"},
+            {"name":"today_is_soso", "label":"그럭저럭", "value":"today_is_soso"},
+            {"name":"today_is_blue", "label":"우울", "value":"today_is_blue"},
+            {"name":"today_is_angry", "label":"화남", "value":"today_is_angry"},
+            {"name":"today_is_flutter", "label":"설렘", "value":"today_is_flutter"},
+            {"name":"today_is_expect", "label":"기대", "value":"today_is_expect"},
+            {"name":"today_is_annoying", "label":"짜증", "value":"today_is_annoying"},
           ]
         ]]></option>
+        <default>today_is_good</default>
       </variable>
-    </variablegroup> 
-    -->
+    </variablegroup>
   </variables>
   <cover>
     <!-- example -->

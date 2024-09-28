@@ -1,3 +1,4 @@
+import { Var } from "@/consts/torytis-variable-object";
 import { cn } from "@/utils/cn";
 
 export function MainContainer() {
@@ -88,8 +89,68 @@ export function MainContainer() {
                 {/* 3 */}
                 <div className="min-w-0 min-h-0">
                   <div className="w-full h-full box-border px-1.5 py-2.5 border border-color-3/30 bg-color-3/10 rounded-xl">
-                    <div className="w-full h-full bg-color-2 rounded-lg">
-                      {/*  */}
+                    <div className="w-full h-full bg-color-2 rounded-lg box-border py-1.5 px-2.5 overflow-y-auto flex flex-wrap gap-1.5 items-start content-start">
+                      <s_sidebar>
+                        {/* 프로필 */}
+                        <s_sidebar_element>
+                          <tt_html_comment>블로그 프로필 사진</tt_html_comment>
+                          <div className="w-full h-[120px] relative border box-border border-color-3/10 rounded-sm overflow-hidden">
+                            <img
+                              src="[##_image_##]"
+                              alt="프로필사진"
+                              className={cn(
+                                "profile-image",
+                                "w-full h-full relative object-cover object-center flex-shrink-0"
+                              )}
+                            />
+                          </div>
+                        </s_sidebar_element>
+                      </s_sidebar>
+                      <div className="w-full h-[1px] bg-color-3/10" />
+                      {/* TODAY IS ... */}
+                      <div className="w-full border box-border border-color-3/10 rounded-sm p-1 text-sm flex justify-center items-center">
+                        <div className="inline-flex gap-2">
+                          <label className="text-color-1 font-bold">
+                            TODAY IS ..
+                          </label>
+                          <div
+                            className={cn(
+                              "font-bold",
+                              Var["[##_var_today_is_##]"]
+                            )}
+                          >
+                            <span className="hidden today_is_not_bad:inline-block">
+                              보통
+                            </span>
+                            <span className="hidden today_is_good:inline-block">
+                              좋음
+                            </span>
+                            <span className="hidden today_is_sad:inline-block">
+                              슬픔
+                            </span>
+                            <span className="hidden today_is_soso:inline-block">
+                              그럭저럭
+                            </span>
+                            <span className="hidden today_is_blue:inline-block">
+                              우울
+                            </span>
+                            <span className="hidden today_is_angry:inline-block">
+                              화남
+                            </span>
+                            <span className="hidden today_is_flutter:inline-block">
+                              설렘
+                            </span>
+                            <span className="hidden today_is_expect:inline-block">
+                              기대
+                            </span>
+                            <span className="hidden today_is_annoying:inline-block">
+                              짜증
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      {/* 블로그 설명 */}
+                      <div className="w-full text-xs">[##_desc_##]</div>
                     </div>
                   </div>
                 </div>

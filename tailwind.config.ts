@@ -1,6 +1,24 @@
 import type { Config } from "tailwindcss";
 import { CSSRuleObject, PluginCreator } from "tailwindcss/types/config";
 
+const staticVariantPlugin: PluginCreator = ({ addVariant }) => {
+  addVariant("my-active", ".my-active &");
+  addVariant("hocus", ["&:hover", "&:focus"]);
+
+  addVariant("today_is_not_bad", [".today_is_not_bad &", ".today_is_not_bad&"]);
+  addVariant("today_is_good", [".today_is_good &", ".today_is_good&"]);
+  addVariant("today_is_sad", [".today_is_sad &", ".today_is_sad&"]);
+  addVariant("today_is_soso", [".today_is_soso &", ".today_is_soso&"]);
+  addVariant("today_is_blue", [".today_is_blue &", ".today_is_blue&"]);
+  addVariant("today_is_angry", [".today_is_angry &", ".today_is_angry&"]);
+  addVariant("today_is_flutter", [".today_is_flutter &", ".today_is_flutter&"]);
+  addVariant("today_is_expect", [".today_is_expect &", ".today_is_expect&"]);
+  addVariant("today_is_annoying", [
+    ".today_is_annoying &",
+    ".today_is_annoying&",
+  ]);
+};
+
 const customColorExtendPlugin: PluginCreator = ({ addUtilities }) => {
   const opacitys = Array.from({ length: 20 }).map((_, index) => index * 5);
 
@@ -250,5 +268,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [customColorExtendPlugin],
+  plugins: [staticVariantPlugin, customColorExtendPlugin],
 } satisfies Config;
