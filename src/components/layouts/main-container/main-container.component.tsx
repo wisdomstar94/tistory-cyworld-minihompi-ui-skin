@@ -121,11 +121,17 @@ export function MainContainer() {
                   {/* 3 */}
                   <div className="min-w-0 min-h-0">
                     <div className="w-full h-full box-border px-1.5 py-2.5 border border-color-3/30 bg-color-3/10 rounded-xl">
+                      {/* scroll container */}
                       <div className="w-full h-full bg-color-2 rounded-lg box-border py-1.5 px-2.5 overflow-y-auto flex flex-col gap-1.5 items-start content-start">
                         {/* 프로필 */}
                         <s_sidebar_element>
                           <tt_html_comment>블로그 프로필 사진</tt_html_comment>
-                          <div className="w-full h-[120px] flex-shrink-0 flex-grow-0 relative border box-border border-color-3/10 rounded-sm overflow-hidden">
+                          <div
+                            className={cn(
+                              "w-full h-[120px] flex-shrink-0 flex-grow-0 relative border box-border border-color-3/10 rounded-sm overflow-hidden",
+                              "hidden tt-body-index:flex"
+                            )}
+                          >
                             <img
                               src="[##_image_##]"
                               alt="프로필사진"
@@ -137,10 +143,20 @@ export function MainContainer() {
                           </div>
                         </s_sidebar_element>
 
-                        <div className="w-full h-[1px] flex-shrink-0 flex-grow-0 bg-color-3/10" />
+                        <div
+                          className={cn(
+                            "w-full h-[1px] flex-shrink-0 flex-grow-0 bg-color-3/10",
+                            "hidden tt-body-index:flex"
+                          )}
+                        />
 
                         {/* TODAY IS ... */}
-                        <div className="w-full border box-border border-color-3/10 rounded-sm p-1 text-sm flex flex-shrink-0 flex-grow-0 justify-center items-center">
+                        <div
+                          className={cn(
+                            "w-full border box-border border-color-3/10 rounded-sm p-1 text-sm flex-shrink-0 flex-grow-0 justify-center items-center",
+                            "hidden tt-body-index:flex"
+                          )}
+                        >
                           <div className="inline-flex gap-2">
                             <label className="text-color-1 font-bold">
                               TODAY IS ..
@@ -192,7 +208,12 @@ export function MainContainer() {
                         </div>
 
                         {/* 블로그 설명 */}
-                        <div className="w-full h-[50px] flex-shrink-0 flex-grow-0 gap-1 relative overflow-y-auto box-border">
+                        <div
+                          className={cn(
+                            "w-full h-[50px] flex-shrink-0 flex-grow-0 gap-1 relative overflow-y-auto box-border",
+                            "hidden tt-body-index:flex"
+                          )}
+                        >
                           <div className="w-full text-xs min-w-0 min-h-0">
                             [##_desc_##]
                           </div>
@@ -200,20 +221,34 @@ export function MainContainer() {
                           {/* <div className="min-w-0 min-h-0"></div> */}
                         </div>
 
-                        <div className="w-full" />
+                        <div
+                          className={cn("w-full", "hidden tt-body-index:flex")}
+                        />
 
-                        <div className="w-full flex-shrink-0 flex-grow-0 flex flex-col gap-1 relative">
+                        <div
+                          className={cn(
+                            "w-full flex-shrink-0 flex-grow-0 flex-col gap-1 relative",
+                            "hidden tt-body-index:flex"
+                          )}
+                        >
                           <TitleBar>Profile Name</TitleBar>
                           <div className="w-full text-xs block whitespace-nowrap overflow-hidden overflow-ellipsis text-color-1 font-medium">
                             [##_blogger_##]
                           </div>
                         </div>
 
-                        <div className="w-full" />
+                        <div
+                          className={cn("w-full", "hidden tt-body-index:flex")}
+                        />
 
                         <s_sidebar_element>
                           <tt_html_comment>최근 댓글</tt_html_comment>
-                          <div className="min-w-0 min-h-0 w-full h-full flex flex-col gap-1 relative">
+                          <div
+                            className={cn(
+                              "min-w-0 min-h-0 w-full h-full flex flex-col gap-1 relative",
+                              "hidden tt-body-index:flex"
+                            )}
+                          >
                             <TitleBar>Recent Comment</TitleBar>
                             <div className="w-full" />
                             <div className="min-w-0 min-h-0 w-full h-full overflow-y-auto text-xs">
@@ -247,9 +282,15 @@ export function MainContainer() {
                   {/* 4 */}
                   <div className="min-w-0 min-h-0 relative">
                     <div className="w-full h-full box-border pl-5 pr-3 py-2.5 border border-color-8 bg-color-2 rounded-xl">
+                      {/* scroll container */}
                       <div className="w-full h-full overflow-y-auto relative flex flex-wrap gap-2 content-start items-start">
                         {/* top */}
-                        <div className="w-full flex gap-4 relative">
+                        <div
+                          className={cn(
+                            "w-full gap-4 relative",
+                            "hidden tt-body-index:flex"
+                          )}
+                        >
                           <s_sidebar_element>
                             <tt_html_comment>최근 게시물</tt_html_comment>
                             <div className="min-w-0 min-h-0 relative flex-1 flex flex-wrap gap-1">
@@ -288,7 +329,12 @@ export function MainContainer() {
                         {/* bottom */}
 
                         {/* mini room */}
-                        <div className="w-full flex flex-wrap gap-1 relative mini_room_display_flag_hide:hidden">
+                        <div
+                          className={cn(
+                            "w-full flex-wrap gap-1 relative mini_room_display_flag_hide:hidden",
+                            "hidden tt-body-index:flex"
+                          )}
+                        >
                           <TitleBar2>Mini Room</TitleBar2>
                           <div className="w-full block aspect-video bg-color-3/5 relative">
                             <s_if_var_mini_room_img_url>
