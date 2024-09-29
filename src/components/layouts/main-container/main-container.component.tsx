@@ -1,5 +1,6 @@
 import { CategoryListBox } from "@/components/category-list-box/category-list-box.component";
 import { NavButton } from "@/components/nav-button/nav-button.component";
+import { Posts } from "@/components/post/posts/posts.component";
 import { TitleBar } from "@/components/title-bar/title-bar.component";
 import { TitleBar2 } from "@/components/title-bar2/title-bar2.component";
 import { Var } from "@/consts/torytis-variable-object";
@@ -358,6 +359,9 @@ export function MainContainer() {
                             </s_not_var_mini_room_img_url>
                           </div>
                         </div>
+
+                        {/* posts */}
+                        <Posts />
                       </div>
                     </div>
                   </div>
