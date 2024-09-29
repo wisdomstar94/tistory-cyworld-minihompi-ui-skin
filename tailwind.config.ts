@@ -59,6 +59,7 @@ const customColorExtendPlugin: PluginCreator = ({ addUtilities }) => {
     "color-6": "var(--tcu-color-6)",
     "color-7": "var(--tcu-color-7)",
     "color-8": "var(--tcu-color-8)",
+    "color-9": "var(--tcu-color-9)",
   };
 
   const keys = Object.keys(extendColors);

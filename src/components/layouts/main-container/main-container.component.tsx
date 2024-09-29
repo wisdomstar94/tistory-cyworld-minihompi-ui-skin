@@ -1,3 +1,4 @@
+import { CategoryListBox } from "@/components/category-list-box/category-list-box.component";
 import { NavButton } from "@/components/nav-button/nav-button.component";
 import { TitleBar } from "@/components/title-bar/title-bar.component";
 import { TitleBar2 } from "@/components/title-bar2/title-bar2.component";
@@ -123,6 +124,12 @@ export function MainContainer() {
                     <div className="w-full h-full box-border px-1.5 py-2.5 border border-color-3/30 bg-color-3/10 rounded-xl">
                       {/* scroll container */}
                       <div className="w-full h-full bg-color-2 rounded-lg box-border py-1.5 px-2.5 overflow-y-auto flex flex-col gap-1.5 items-start content-start">
+                        {/* 카테고리 목록 */}
+                        <s_sidebar_element>
+                          <tt_html_comment>카테고리 목록</tt_html_comment>
+                          <CategoryListBox />
+                        </s_sidebar_element>
+
                         {/* 프로필 */}
                         <s_sidebar_element>
                           <tt_html_comment>블로그 프로필 사진</tt_html_comment>
