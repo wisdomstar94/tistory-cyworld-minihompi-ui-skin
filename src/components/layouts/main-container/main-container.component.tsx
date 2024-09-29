@@ -226,7 +226,7 @@ export function MainContainer() {
                                           [##_rctrp_rep_desc_##]
                                         </div>
                                       </div>
-                                      <div className="w-[40px] flex items-center flex-shrink-0 flex-grow-0 justify-end group-hover/recent-comment-item:underline">
+                                      <div className="w-[40px] flex items-center flex-shrink-0 flex-grow-0 justify-end group-hover/recent-comment-item:underline tabular-nums">
                                         [##_rctrp_rep_time_##]
                                       </div>
                                     </a>
@@ -242,12 +242,13 @@ export function MainContainer() {
 
                   {/* 4 */}
                   <div className="min-w-0 min-h-0 relative">
-                    <div className="w-full h-full box-border pl-5 pr-2 py-2.5 border border-color-3/30 bg-color-2 rounded-xl">
-                      <div className="w-full h-full overflow-y-auto relative">
-                        <div className="w-full grid grid-cols-2 gap-2 relative">
+                    <div className="w-full h-full box-border pl-5 pr-3 py-2.5 border border-color-3/30 bg-color-2 rounded-xl">
+                      <div className="w-full h-full overflow-y-auto relative flex flex-wrap gap-2 content-start items-start">
+                        {/* top */}
+                        <div className="w-full flex gap-4 relative">
                           <s_sidebar_element>
                             <tt_html_comment>최근 게시물</tt_html_comment>
-                            <div className="min-w-0 min-h-0 relative flex flex-wrap gap-1">
+                            <div className="min-w-0 min-h-0 relative flex-1 flex flex-wrap gap-1">
                               <TitleBar2>최근 게시물</TitleBar2>
                               <div className="w-full relative">
                                 <ul className="w-full flex flex-wrap gap-1 relative other/recent-post-list">
@@ -265,7 +266,7 @@ export function MainContainer() {
                                             [##_rctps_rep_title_##]
                                           </div>
                                         </div>
-                                        <div className="w-[70px] flex items-center justify-end flex-shrink-0 flex-grow-0 group-hover/rctps-rep-a:underline">
+                                        <div className="w-[70px] flex items-center justify-end flex-shrink-0 flex-grow-0 group-hover/rctps-rep-a:underline tabular-nums">
                                           [##_rctps_rep_simple_date_##]
                                         </div>
                                       </a>
@@ -278,9 +279,26 @@ export function MainContainer() {
                               </div>
                             </div>
                           </s_sidebar_element>
+                        </div>
 
-                          <div className="min-w-0 min-h-0 relative flex flex-wrap">
-                            2
+                        {/* bottom */}
+
+                        {/* mini room */}
+                        <div className="w-full flex flex-wrap gap-1 relative mini_room_display_flag_hide:hidden">
+                          <TitleBar2>Mini Room</TitleBar2>
+                          <div className="w-full block aspect-video bg-color-3/5 relative">
+                            <s_if_var_mini_room_img_url>
+                              <img
+                                src={Var["[##_var_mini_room_img_url_##]"]}
+                                className="w-full h-full object-cover object-center"
+                              />
+                            </s_if_var_mini_room_img_url>
+                            <s_not_var_mini_room_img_url>
+                              <img
+                                src={"/images/mini-room-default.jpg"}
+                                className="w-full h-full object-cover object-center"
+                              />
+                            </s_not_var_mini_room_img_url>
                           </div>
                         </div>
                       </div>

@@ -5,6 +5,19 @@ const staticVariantPlugin: PluginCreator = ({ addVariant }) => {
   addVariant("my-active", ".my-active &");
   addVariant("hocus", ["&:hover", "&:focus"]);
 
+  // https://tistory.github.io/document-tistory-skin/common/global.html 참조
+  addVariant("tt-body-index", ["#tt-body-index &", "#tt-body-index&"]);
+  addVariant("tt-body-page", ["#tt-body-page &", "#tt-body-page&"]);
+  addVariant("tt-body-category", ["#tt-body-category &", "#tt-body-category&"]);
+  addVariant("tt-body-archive", ["#tt-body-archive &", "#tt-body-archive&"]);
+  addVariant("tt-body-tag", ["#tt-body-tag &", "#tt-body-tag&"]);
+  addVariant("tt-body-search", ["#tt-body-search &", "#tt-body-search&"]);
+  addVariant("tt-body-guestbook", [
+    "#tt-body-guestbook &",
+    "#tt-body-guestbook&",
+  ]);
+  addVariant("tt-body-location", ["#tt-body-location &", "#tt-body-location&"]);
+
   addVariant("today_is_not_bad", [".today_is_not_bad &", ".today_is_not_bad&"]);
   addVariant("today_is_good", [".today_is_good &", ".today_is_good&"]);
   addVariant("today_is_pleasure", [
@@ -21,6 +34,15 @@ const staticVariantPlugin: PluginCreator = ({ addVariant }) => {
   addVariant("today_is_annoying", [
     ".today_is_annoying &",
     ".today_is_annoying&",
+  ]);
+
+  addVariant("mini_room_display_flag_show", [
+    ".mini_room_display_flag_show &",
+    ".mini_room_display_flag_show&",
+  ]);
+  addVariant("mini_room_display_flag_hide", [
+    ".mini_room_display_flag_hide &",
+    ".mini_room_display_flag_hide&",
   ]);
 };
 

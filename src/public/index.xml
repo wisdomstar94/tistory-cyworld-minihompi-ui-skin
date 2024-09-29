@@ -95,10 +95,35 @@
             {"name":"today_is_angry", "label":"화남", "value":"today_is_angry"},
             {"name":"today_is_flutter", "label":"설렘", "value":"today_is_flutter"},
             {"name":"today_is_expect", "label":"기대", "value":"today_is_expect"},
-            {"name":"today_is_annoying", "label":"짜증", "value":"today_is_annoying"},
+            {"name":"today_is_annoying", "label":"짜증", "value":"today_is_annoying"}
           ]
         ]]></option>
         <default>today_is_good</default>
+      </variable>
+    </variablegroup>
+    <variablegroup name="Mini Room 설정">
+      <variable>
+        <name>mini_room_img_url</name>
+        <label>
+          <![CDATA[ mini room 영역에 표시될 이미지 url (16:9 사이즈 권장) ]]>
+        </label>
+        <description>Mini Room 영역에 표시될 이미지 Url 을 입력하세요.</description>
+        <type>STRING</type>
+      </variable>
+      <variable>
+        <name>mini_room_display_flag</name>
+        <label>
+          <![CDATA[ mini room 표시 여부 ]]>
+        </label>
+        <description>Mini Room 영역에 표시될 이미지 Url 을 입력하세요.</description>
+        <type>SELECT</type>
+        <option><![CDATA[
+          [
+            {"name":"mini_room_display_flag_show", "label":"표시", "value":"mini_room_display_flag_show"},
+            {"name":"mini_room_display_flag_hide", "label":"숨김", "value":"mini_room_display_flag_hide"}
+          ]
+        ]]></option>
+        <default>mini_room_display_flag_show</default>
       </variable>
     </variablegroup>
   </variables>
