@@ -95,7 +95,8 @@
             {"name":"today_is_angry", "label":"화남", "value":"today_is_angry"},
             {"name":"today_is_flutter", "label":"설렘", "value":"today_is_flutter"},
             {"name":"today_is_expect", "label":"기대", "value":"today_is_expect"},
-            {"name":"today_is_annoying", "label":"짜증", "value":"today_is_annoying"}
+            {"name":"today_is_annoying", "label":"짜증", "value":"today_is_annoying"},
+            {"name":"today_is_bored", "label":"지겨움", "value":"today_is_bored"}
           ]
         ]]></option>
         <default>today_is_good</default>

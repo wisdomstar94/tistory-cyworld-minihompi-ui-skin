@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 import { CSSRuleObject, PluginCreator } from "tailwindcss/types/config";
 
 const staticVariantPlugin: PluginCreator = ({ addVariant }) => {
-  addVariant("my-active", ".my-active &");
+  addVariant("my-active", [".my-active &", ".my-active&"]);
   addVariant("hocus", ["&:hover", "&:focus"]);
 
   // https://tistory.github.io/document-tistory-skin/common/global.html 참조
@@ -35,6 +35,7 @@ const staticVariantPlugin: PluginCreator = ({ addVariant }) => {
     ".today_is_annoying &",
     ".today_is_annoying&",
   ]);
+  addVariant("today_is_bored", [".today_is_bored &", ".today_is_bored&"]);
 
   addVariant("mini_room_display_flag_show", [
     ".mini_room_display_flag_show &",
@@ -56,6 +57,8 @@ const customColorExtendPlugin: PluginCreator = ({ addUtilities }) => {
     "color-4": "var(--tcu-color-4)",
     "color-5": "var(--tcu-color-5)",
     "color-6": "var(--tcu-color-6)",
+    "color-7": "var(--tcu-color-7)",
+    "color-8": "var(--tcu-color-8)",
   };
 
   const keys = Object.keys(extendColors);

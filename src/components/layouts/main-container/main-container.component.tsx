@@ -1,3 +1,4 @@
+import { NavButton } from "@/components/nav-button/nav-button.component";
 import { TitleBar } from "@/components/title-bar/title-bar.component";
 import { TitleBar2 } from "@/components/title-bar2/title-bar2.component";
 import { Var } from "@/consts/torytis-variable-object";
@@ -183,6 +184,9 @@ export function MainContainer() {
                               <span className="hidden today_is_annoying:inline-block">
                                 😖 짜증
                               </span>
+                              <span className="hidden today_is_bored:inline-block">
+                                🥱 지겨움
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -242,7 +246,7 @@ export function MainContainer() {
 
                   {/* 4 */}
                   <div className="min-w-0 min-h-0 relative">
-                    <div className="w-full h-full box-border pl-5 pr-3 py-2.5 border border-color-3/30 bg-color-2 rounded-xl">
+                    <div className="w-full h-full box-border pl-5 pr-3 py-2.5 border border-color-8 bg-color-2 rounded-xl">
                       <div className="w-full h-full overflow-y-auto relative flex flex-wrap gap-2 content-start items-start">
                         {/* top */}
                         <div className="w-full flex gap-4 relative">
@@ -304,6 +308,44 @@ export function MainContainer() {
                       </div>
                     </div>
                   </div>
+
+                  {/* right menu area */}
+                  <nav className="w-[1px] h-auto absolute top-[50px] right-0 z-1 block">
+                    <ul className="w-[64px] max-h-[350px] flex flex-col relative gap-0.5">
+                      <li className="w-full flex relative">
+                        <NavButton
+                          id="nav-home-button"
+                          className="tt-body-index:bg-color-2 tt-body-index:text-color-1"
+                          href="/"
+                        >
+                          홈
+                        </NavButton>
+                      </li>
+                      <li className="w-full flex relative">
+                        <NavButton
+                          id="nav-category-button"
+                          className="tt-body-category:bg-color-2 tt-body-category:text-color-1"
+                          href="/category"
+                        >
+                          게시판
+                        </NavButton>
+                      </li>
+                      <li className="w-full flex relative">
+                        <NavButton
+                          id="nav-guestbook-button"
+                          className="tt-body-guestbook:bg-color-2 tt-body-guestbook:text-color-1"
+                          href="/guestbook"
+                        >
+                          방명록
+                        </NavButton>
+                      </li>
+                      <li className="w-full flex relative">
+                        <NavButton id="nav-blog-manage-button" href="/manage">
+                          관리
+                        </NavButton>
+                      </li>
+                    </ul>
+                  </nav>
                 </s_sidebar>
               </div>
             </div>

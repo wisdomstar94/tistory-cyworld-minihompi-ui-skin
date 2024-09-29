@@ -12,7 +12,7 @@ export default function App() {
         />
         <title></title>
       </head>
-      <body>
+      <body id="[##_body_id_##]">
         <MainContainer />
       </body>
     </html>
