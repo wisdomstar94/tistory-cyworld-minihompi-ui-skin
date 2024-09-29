@@ -18,7 +18,21 @@ export function PostsIndexItem(props: IPostsIndexItem.Props) {
 
   return (
     <>
-      <li className="w-full flex relative"></li>
+      <tr className="w-full relative">
+        <td>
+          <a href={`[##_${replacer_prefix}_rep_link_##]`}>
+            {`[##_${replacer_prefix}_rep_title_##]`}
+          </a>
+        </td>
+        <td>{`[##_${replacer_prefix}_rep_author_##]`}</td>
+        <td>{`[##_article_rep_date_##]`}</td>
+        <td>
+          <span>
+            <s_rp_count>{`[##_article_rep_rp_cnt_##]`}</s_rp_count>
+          </span>
+        </td>
+        <td></td>
+      </tr>
     </>
   );
 }

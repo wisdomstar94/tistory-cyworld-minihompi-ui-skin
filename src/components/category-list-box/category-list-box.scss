@@ -1,14 +1,4 @@
 [data-title="category-list-area"] {
-  &.category-all {
-    ul.tt_category {
-      > li {
-        a.link_tit {
-          @apply font-bold;
-        }
-      }
-    }
-  }
-
   ul.tt_category {
     @apply w-full relative;
 
@@ -29,6 +19,10 @@
 
         .c_cnt {
           @apply inline-flex flex-grow-0 flex-shrink-0;
+        }
+
+        &.my-active {
+          @apply font-bold;
         }
       }
 
