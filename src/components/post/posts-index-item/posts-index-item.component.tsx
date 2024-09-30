@@ -27,7 +27,7 @@ export function PostsIndexItem(props: IPostsIndexItem.Props) {
             {`[##_${replacer_prefix}_rep_title_##]`}
           </a>
         </td>
-        <td className="px-2 py-0.5">{`[##_${replacer_prefix}_rep_author_##]`}</td>
+        <td className="px-2 py-0.5 text-color-1">{`[##_${replacer_prefix}_rep_author_##]`}</td>
         <td className="px-2 py-0.5 tabular-nums">{`[##_article_rep_date_##]`}</td>
         <td className="px-2 py-0.5">
           <span>
