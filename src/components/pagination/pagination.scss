@@ -1,0 +1,13 @@
+[data-title="pagination-page-num-list"] {
+  > a {
+    font-size: 0;
+
+    > span {
+      @apply text-xs text-color-3/70 px-2;
+
+      &.selected {
+        @apply font-bold text-color-3;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { CategoryListBox } from "@/components/category-list-box/category-list-box.component";
 import { NavButton } from "@/components/nav-button/nav-button.component";
+import { Pagination } from "@/components/pagination/pagination.component";
 import { Posts } from "@/components/post/posts/posts.component";
 import { TitleBar } from "@/components/title-bar/title-bar.component";
 import { TitleBar2 } from "@/components/title-bar2/title-bar2.component";
@@ -362,6 +363,8 @@ export function MainContainer() {
 
                         {/* posts */}
                         <Posts />
+
+                        <Pagination />
                       </div>
                     </div>
                   </div>

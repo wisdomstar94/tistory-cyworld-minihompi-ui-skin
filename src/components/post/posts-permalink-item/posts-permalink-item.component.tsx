@@ -14,7 +14,11 @@ export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
 
   return (
     <>
-      <li></li>
+      <tr>
+        <td className="relative">
+          <div className="w-full flex flex-wrap gap-1 relative">hi</div>
+        </td>
+      </tr>
     </>
   );
 }

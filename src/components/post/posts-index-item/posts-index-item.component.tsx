@@ -19,19 +19,21 @@ export function PostsIndexItem(props: IPostsIndexItem.Props) {
   return (
     <>
       <tr className="w-full relative">
-        <td>
-          <a href={`[##_${replacer_prefix}_rep_link_##]`}>
+        <td className="px-2 py-0.5">
+          <a
+            href={`[##_article_rep_link_##]`}
+            className="hover:underline flow-root max-w-[160px] whitespace-nowrap overflow-hidden overflow-ellipsis"
+          >
             {`[##_${replacer_prefix}_rep_title_##]`}
           </a>
         </td>
-        <td>{`[##_${replacer_prefix}_rep_author_##]`}</td>
-        <td>{`[##_article_rep_date_##]`}</td>
-        <td>
+        <td className="px-2 py-0.5">{`[##_${replacer_prefix}_rep_author_##]`}</td>
+        <td className="px-2 py-0.5 tabular-nums">{`[##_article_rep_date_##]`}</td>
+        <td className="px-2 py-0.5">
           <span>
             <s_rp_count>{`[##_article_rep_rp_cnt_##]`}</s_rp_count>
           </span>
         </td>
-        <td></td>
       </tr>
     </>
   );
