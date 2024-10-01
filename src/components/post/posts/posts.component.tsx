@@ -9,7 +9,7 @@ export function Posts() {
         data-title="article-list"
         className={cn(
           "w-full relative text-xs",
-          "hidden tt-body-category:table tt-body-page:table"
+          "hidden tt-body-category:table tt-body-page:block"
           //
         )}
       >
@@ -22,14 +22,15 @@ export function Posts() {
           <tr>
             <th className="text-left px-2 py-1">제목</th>
             <th className="text-left px-2 py-1 w-[80px]">작성자</th>
-            <th className="text-left px-2 py-1 w-[130px]">작성일</th>
+            <th className="text-left px-2 py-1 w-[140px]">작성일</th>
             <th className="text-left px-2 py-1 w-[60px]">댓글수</th>
           </tr>
         </thead>
         <tbody
           className={cn(
-            "before:w-full before:h-[3px] before:block border-b border-b-color-3/15 after:h-[3px] after:block",
-            "border-b-0 tt-body-category:border-b"
+            "before:w-full before:h-[3px] before:block border-b border-b-color-3/15 after:h-[3px] after:block relative",
+            "border-b-0 tt-body-category:border-b",
+            "tt-body-page:block"
           )}
         >
           <s_article_rep>
@@ -58,6 +59,12 @@ export function Posts() {
               <PostsPermalinkItem postType="protected" />
             </s_permalink_article_rep>
           </s_article_protected>
+
+          <tr className="other-exist-[post-tr-item]:hidden">
+            <td colSpan={4} className="text-xs text-color-3/40 text-center">
+              조회된 결과가 없습니다.
+            </td>
+          </tr>
         </tbody>
       </table>
     </>

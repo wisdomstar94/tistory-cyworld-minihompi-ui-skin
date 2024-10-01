@@ -7,8 +7,13 @@ export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
 
   return (
     <>
-      <tr>
-        <td className="relative">
+      <tr
+        className={cn(
+          "other/post-tr-item relative",
+          "w-full tt-body-page:block"
+        )}
+      >
+        <td className={cn("relative", "w-full tt-body-page:block")}>
           <div className="w-full flex flex-wrap gap-1 relative">
             {/* title row */}
             <div className="w-full flex relative gap-2 items-start border-b border-b-color-3/30 pb-1">

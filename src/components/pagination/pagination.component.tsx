@@ -5,7 +5,12 @@ export function Pagination() {
   return (
     <>
       <s_paging>
-        <div className="w-full flex flex-wrap justify-center items-center content-center gap-0.5 relative box-border px-content-area-padding">
+        <div
+          className={cn(
+            "w-full flex-wrap justify-center items-center content-center gap-0.5 relative box-border px-content-area-padding",
+            "hidden tt-body-category:flex"
+          )}
+        >
           <a
             tt-onlyattr="[##_prev_page_##]"
             className={cn("[##_no_more_prev_##]", "rounded-md p-1 inline-flex")}

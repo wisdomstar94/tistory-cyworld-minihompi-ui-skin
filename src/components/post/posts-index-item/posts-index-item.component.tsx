@@ -18,7 +18,12 @@ export function PostsIndexItem(props: IPostsIndexItem.Props) {
 
   return (
     <>
-      <tr className="w-full relative">
+      <tr
+        className={cn(
+          "w-full relative other/post-tr-item",
+          "tt-body-page:block"
+        )}
+      >
         <td className="px-2 py-0.5">
           <a
             href={`[##_article_rep_link_##]`}
@@ -28,7 +33,11 @@ export function PostsIndexItem(props: IPostsIndexItem.Props) {
           </a>
         </td>
         <td className="px-2 py-0.5 text-color-1">{`[##_${replacer_prefix}_rep_author_##]`}</td>
-        <td className="px-2 py-0.5 tabular-nums">{`[##_article_rep_date_##]`}</td>
+        {/* <td className="px-2 py-0.5 tabular-nums">{`[##_article_rep_date_##]`}</td> */}
+        <td className="px-2 py-0.5 tabular-nums">
+          [##_article_rep_date_year_##]-[##_article_rep_date_month_##]-[##_article_rep_date_day_##]{" "}
+          [##_article_rep_date_hour_##]:[##_article_rep_date_minute_##]
+        </td>
         <td className="px-2 py-0.5">
           <span>
             <s_rp_count>{`[##_article_rep_rp_cnt_##]`}</s_rp_count>
