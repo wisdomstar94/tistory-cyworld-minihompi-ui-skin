@@ -293,3 +293,9 @@
     @apply w-full relative;
   }
 }
+
+[data-title="comment-container"] {
+  form {
+    @apply block w-full;
+  }
+}

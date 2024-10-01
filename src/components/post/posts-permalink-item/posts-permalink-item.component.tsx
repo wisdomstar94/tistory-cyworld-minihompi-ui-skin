@@ -3,6 +3,7 @@ import { cn } from "@/utils/cn";
 import "./posts-permalink-item.scss";
 import { Script } from "@/components/script/script.component";
 import { CommentList } from "@/components/commnet-list/commnet-list.component";
+import { CommentInputForm } from "@/components/commnet-input-form/comment-input-form.component";
 
 export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
   const { postType } = props;
@@ -55,8 +56,15 @@ export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
 
             {/* comment */}
             <s_rp>
-              <CommentList />
-              <s_rp_input_form>{/* ... */}</s_rp_input_form>
+              <div
+                className="w-full mt-4 relative flex flex-wrap gap-6"
+                data-title="comment-container"
+              >
+                <CommentList />
+                <s_rp_input_form>
+                  <CommentInputForm />
+                </s_rp_input_form>
+              </div>
             </s_rp>
           </div>
         </td>
