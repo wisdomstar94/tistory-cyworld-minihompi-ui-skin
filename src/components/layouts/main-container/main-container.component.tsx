@@ -384,7 +384,10 @@ export function MainContainer() {
                       <li className="w-full flex relative">
                         <NavButton
                           id="nav-category-button"
-                          className="tt-body-category:bg-color-2 tt-body-category:text-color-1"
+                          className={cn(
+                            "tt-body-category:bg-color-2 tt-body-category:text-color-1",
+                            "tt-body-page:bg-color-2 tt-body-page:text-color-1"
+                          )}
                           href="/category"
                         >
                           게시판

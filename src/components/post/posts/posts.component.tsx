@@ -26,7 +26,12 @@ export function Posts() {
             <th className="text-left px-2 py-1 w-[60px]">댓글수</th>
           </tr>
         </thead>
-        <tbody className="before:w-full before:h-[3px] before:block border-b border-b-color-3/15 after:h-[3px] after:block">
+        <tbody
+          className={cn(
+            "before:w-full before:h-[3px] before:block border-b border-b-color-3/15 after:h-[3px] after:block",
+            "border-b-0 tt-body-category:border-b"
+          )}
+        >
           <s_article_rep>
             <s_index_article_rep>
               <PostsIndexItem postType="normal" />

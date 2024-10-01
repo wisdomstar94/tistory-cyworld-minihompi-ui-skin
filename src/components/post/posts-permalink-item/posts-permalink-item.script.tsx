@@ -9,7 +9,9 @@ window.addEventListener("load", () => {
 });
 
 function initialAnotherCategoryPosts() {
-  const anotherCategory = document.querySelector<HTMLElement>(`#tt-body-page .another_category`);
+  const anotherCategory = document.querySelector<HTMLElement>(
+    `#tt-body-page .another_category`
+  );
   if (anotherCategory === null) return;
 
   const trs = anotherCategory.querySelectorAll<HTMLElement>("table tbody tr");
@@ -17,7 +19,10 @@ function initialAnotherCategoryPosts() {
 
   trs.forEach((tr) => {
     tr.addEventListener("click", () => {
-      const a = unwrap(tr.querySelector<HTMLElement>("a[href]"), "a[href] 요소가 없습니다.");
+      const a = unwrap(
+        tr.querySelector<HTMLElement>("a[href]"),
+        "a[href] 요소가 없습니다."
+      );
       const href = unwrap(a.getAttribute("href"), "href 가 없습니다.");
       location.href = href;
     });
@@ -25,7 +30,9 @@ function initialAnotherCategoryPosts() {
 }
 
 function initialCodeBlock() {
-  const codes = document.querySelectorAll<HTMLElement>("#article-description pre code");
+  const codes = document.querySelectorAll<HTMLElement>(
+    "#article-description pre code"
+  );
   // console.log("@codes", codes);
   codes.forEach((code) => {
     if (code.parentElement?.nodeName.toLowerCase() !== "pre") {
@@ -85,3 +92,10 @@ function isContain(code: HTMLElement, event: MouseEvent) {
 
   return isContain;
 }
+
+function onClickPostUrlCopyButton() {
+  copy(location.href);
+  alert("글 주소가 복사되었습니다.");
+}
+
+(window as any).onClickPostUrlCopyButton = onClickPostUrlCopyButton;
