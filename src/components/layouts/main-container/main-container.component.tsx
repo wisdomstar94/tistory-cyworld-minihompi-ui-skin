@@ -402,6 +402,18 @@ export function MainContainer() {
                     </li>
                     <li className="w-full flex relative">
                       <NavButton
+                        id="nav-notice-button"
+                        className={cn(
+                          "tt-body-notice:bg-color-2 tt-body-notice:text-color-1",
+                          "tt-body-page:bg-color-2 tt-body-page:text-color-1"
+                        )}
+                        href="/notice"
+                      >
+                        공지사항
+                      </NavButton>
+                    </li>
+                    <li className="w-full flex relative">
+                      <NavButton
                         id="nav-guestbook-button"
                         className="tt-body-guestbook:bg-color-2 tt-body-guestbook:text-color-1"
                         href="/guestbook"
