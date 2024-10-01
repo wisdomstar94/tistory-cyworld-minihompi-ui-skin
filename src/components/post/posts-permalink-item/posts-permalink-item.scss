@@ -18,27 +18,27 @@
 
     // 제목
     h1 {
-      @apply text-5xl mt-4 mb-2;
-      // scroll-margin: 60px;
-    }
-    h2 {
       @apply text-4xl mt-4 mb-2;
       // scroll-margin: 60px;
     }
-    h3 {
+    h2 {
       @apply text-3xl mt-4 mb-2;
       // scroll-margin: 60px;
     }
-    h4 {
+    h3 {
       @apply text-2xl mt-4 mb-2;
       // scroll-margin: 60px;
     }
-    h5 {
+    h4 {
       @apply text-xl mt-4 mb-2;
       // scroll-margin: 60px;
     }
-    h6 {
+    h5 {
       @apply text-lg mt-4 mb-2;
+      // scroll-margin: 60px;
+    }
+    h6 {
+      @apply text-base mt-4 mb-2;
       // scroll-margin: 60px;
     }
 
@@ -283,5 +283,13 @@
     figure {
       @apply mt-1 mb-4;
     }
+  }
+}
+
+[data-tistory-react-app="Namecard"] {
+  @apply hidden;
+
+  & + div {
+    @apply w-full relative;
   }
 }

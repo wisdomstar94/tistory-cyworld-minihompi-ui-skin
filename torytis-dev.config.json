@@ -122,21 +122,21 @@
                 },
                 {
                     "type": "Image",
-                    "value": "이미지 URL"
+                    "value": "https://cdn.pixabay.com/photo/2023/09/26/11/14/cats-8277166_640.jpg"
                 }
             ],
             "comment_list": [
                 {
                     "comment_id": "comment19900001",
                     "name": "방문자1",
-                    "profile_img_url": "이미지 URL",
+                    "profile_img_url": "https://cdn.pixabay.com/photo/2023/09/26/11/14/cats-8277166_640.jpg",
                     "content": "댓글 남기고 갑니다.",
                     "datetime": "2024-01-24 17:26:00",
                     "comment_list": [
                         {
                             "comment_id": "comment19900002",
                             "name": "방문자2",
-                            "profile_img_url": "이미지 URL",
+                            "profile_img_url": "https://cdn.pixabay.com/photo/2023/09/26/11/14/cats-8277166_640.jpg",
                             "content": "저는 댓글의 댓글 남기고 갑니다~",
                             "datetime": "2024-01-24 17:32:00"
                         }
@@ -187,21 +187,21 @@
                 },
                 {
                     "type": "Image",
-                    "value": "이미지 URL"
+                    "value": "https://cdn.pixabay.com/photo/2023/09/26/11/14/cats-8277166_640.jpg"
                 }
             ],
             "comment_list": [
                 {
                     "comment_id": "comment19900033",
                     "name": "방문자3",
-                    "profile_img_url": "이미지 URL",
+                    "profile_img_url": "https://cdn.pixabay.com/photo/2023/09/26/11/14/cats-8277166_640.jpg",
                     "content": "댓글 남기고 갑니다.",
                     "datetime": "2024-01-25 09:01:34",
                     "comment_list": [
                         {
                             "comment_id": "comment19900034",
                             "name": "방문자4",
-                            "profile_img_url": "이미지 URL",
+                            "profile_img_url": "https://cdn.pixabay.com/photo/2023/09/26/11/14/cats-8277166_640.jpg",
                             "content": "저는 댓글의 댓글 남기고 갑니다~",
                             "datetime": "2024-01-25 10:11:35"
                         }
@@ -227,21 +227,21 @@
                 },
                 {
                     "type": "Image",
-                    "value": "이미지 URL"
+                    "value": "https://cdn.pixabay.com/photo/2023/09/26/11/14/cats-8277166_640.jpg"
                 }
             ],
             "comment_list": [
                 {
                     "comment_id": "comment19900033",
                     "name": "방문자3",
-                    "profile_img_url": "이미지 URL",
+                    "profile_img_url": "https://cdn.pixabay.com/photo/2023/09/26/11/14/cats-8277166_640.jpg",
                     "content": "댓글 남기고 갑니다.",
                     "datetime": "2024-01-25 09:01:34",
                     "comment_list": [
                         {
                             "comment_id": "comment19900034",
                             "name": "방문자4",
-                            "profile_img_url": "이미지 URL",
+                            "profile_img_url": "https://cdn.pixabay.com/photo/2023/09/26/11/14/cats-8277166_640.jpg",
                             "content": "저는 댓글의 댓글 남기고 갑니다~",
                             "datetime": "2024-01-25 10:11:35"
                         }

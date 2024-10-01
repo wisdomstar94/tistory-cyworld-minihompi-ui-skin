@@ -2,6 +2,7 @@ import { IPostsPermalinkItem } from "./posts-permalink-item.type";
 import { cn } from "@/utils/cn";
 import "./posts-permalink-item.scss";
 import { Script } from "@/components/script/script.component";
+import { CommentList } from "@/components/commnet-list/commnet-list.component";
 
 export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
   const { postType } = props;
@@ -51,6 +52,12 @@ export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
             <div className="hidden" data-title="article-category-name">
               [##_article_rep_category_##]
             </div>
+
+            {/* comment */}
+            <s_rp>
+              <CommentList />
+              <s_rp_input_form>{/* ... */}</s_rp_input_form>
+            </s_rp>
           </div>
         </td>
       </tr>
