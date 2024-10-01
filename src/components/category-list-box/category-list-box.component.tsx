@@ -9,7 +9,7 @@ export function CategoryListBox() {
       <div
         className={cn(
           "w-full flex flex-wrap gap-1 relative text-xs",
-          "hidden tt-body-category:flex tt-body-page:flex tt-body-search:flex tt-body-notice:flex"
+          "hidden tt-body-category:flex tt-body-page:flex tt-body-search:flex tt-body-notice:flex tt-body-notice-page:flex"
           //
         )}
         data-title="category-list-area"

@@ -18,6 +18,10 @@ const staticVariantPlugin: PluginCreator = ({ addVariant }) => {
   ]);
   addVariant("tt-body-location", ["#tt-body-location &", "#tt-body-location&"]);
   addVariant("tt-body-notice", ["#tt-body-notice &", "#tt-body-notice&"]); // custom
+  addVariant("tt-body-notice-page", [
+    "#tt-body-notice-page &",
+    "#tt-body-notice-page&",
+  ]); // custom
 
   addVariant("today_is_not_bad", [".today_is_not_bad &", ".today_is_not_bad&"]);
   addVariant("today_is_good", [".today_is_good &", ".today_is_good&"]);

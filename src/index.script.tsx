@@ -9,6 +9,8 @@ function checkPage() {
 
   if (pathname === "/notice") {
     document.body.id = "tt-body-notice";
+  } else if (pathname.startsWith("/notice/")) {
+    document.body.id = "tt-body-notice-page";
   }
 }
 

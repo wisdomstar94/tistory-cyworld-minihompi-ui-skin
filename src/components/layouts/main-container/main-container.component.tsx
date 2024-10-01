@@ -414,7 +414,7 @@ export function MainContainer() {
                             id="nav-notice-button"
                             className={cn(
                               "tt-body-notice:bg-color-2 tt-body-notice:text-color-1",
-                              "tt-body-page:bg-color-2 tt-body-page:text-color-1"
+                              "tt-body-notice-page:bg-color-2 tt-body-notice-page:text-color-1"
                             )}
                             href="/notice"
                           >

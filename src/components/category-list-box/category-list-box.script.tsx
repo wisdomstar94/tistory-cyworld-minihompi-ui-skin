@@ -13,7 +13,7 @@ function checkCategoryPageUrl() {
     targetCategoryMenuElement?.classList.add("my-active");
   }
 
-  if (pathname === "/notice") {
+  if (pathname === "/notice" || pathname.startsWith("/notice/")) {
     document
       .querySelector<HTMLElement>("#category-list-notice-menu")
       ?.classList.add("my-active");
