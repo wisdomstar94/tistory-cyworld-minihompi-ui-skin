@@ -379,53 +379,70 @@ export function MainContainer() {
                 {/* right menu area */}
                 <nav className="w-[1px] h-auto absolute top-[50px] right-0 z-1 block">
                   <ul className="w-[64px] max-h-[350px] flex flex-col relative gap-0.5">
-                    <li className="w-full flex relative">
-                      <NavButton
-                        id="nav-home-button"
-                        className="tt-body-index:bg-color-2 tt-body-index:text-color-1"
-                        href="/"
-                      >
-                        홈
-                      </NavButton>
-                    </li>
-                    <li className="w-full flex relative">
-                      <NavButton
-                        id="nav-category-button"
-                        className={cn(
-                          "tt-body-category:bg-color-2 tt-body-category:text-color-1",
-                          "tt-body-page:bg-color-2 tt-body-page:text-color-1"
-                        )}
-                        href="/category"
-                      >
-                        게시판
-                      </NavButton>
-                    </li>
-                    <li className="w-full flex relative">
-                      <NavButton
-                        id="nav-notice-button"
-                        className={cn(
-                          "tt-body-notice:bg-color-2 tt-body-notice:text-color-1",
-                          "tt-body-page:bg-color-2 tt-body-page:text-color-1"
-                        )}
-                        href="/notice"
-                      >
-                        공지사항
-                      </NavButton>
-                    </li>
-                    <li className="w-full flex relative">
-                      <NavButton
-                        id="nav-guestbook-button"
-                        className="tt-body-guestbook:bg-color-2 tt-body-guestbook:text-color-1"
-                        href="/guestbook"
-                      >
-                        방명록
-                      </NavButton>
-                    </li>
-                    <li className="w-full flex relative">
-                      <NavButton id="nav-blog-manage-button" href="/manage">
-                        관리
-                      </NavButton>
-                    </li>
+                    <s_sidebar>
+                      <s_sidebar_element>
+                        <tt_html_comment>[nav] 홈</tt_html_comment>
+                        <li className="w-full flex relative">
+                          <NavButton
+                            id="nav-home-button"
+                            className="tt-body-index:bg-color-2 tt-body-index:text-color-1"
+                            href="/"
+                          >
+                            홈
+                          </NavButton>
+                        </li>
+                      </s_sidebar_element>
+                      <s_sidebar_element>
+                        <tt_html_comment>[nav] 게시판</tt_html_comment>
+                        <li className="w-full flex relative">
+                          <NavButton
+                            id="nav-category-button"
+                            className={cn(
+                              "tt-body-category:bg-color-2 tt-body-category:text-color-1",
+                              "tt-body-page:bg-color-2 tt-body-page:text-color-1"
+                            )}
+                            href="/category"
+                          >
+                            게시판
+                          </NavButton>
+                        </li>
+                      </s_sidebar_element>
+                      <s_sidebar_element>
+                        <tt_html_comment>[nav] 공지사항</tt_html_comment>
+                        <li className="w-full flex relative">
+                          <NavButton
+                            id="nav-notice-button"
+                            className={cn(
+                              "tt-body-notice:bg-color-2 tt-body-notice:text-color-1",
+                              "tt-body-page:bg-color-2 tt-body-page:text-color-1"
+                            )}
+                            href="/notice"
+                          >
+                            공지사항
+                          </NavButton>
+                        </li>
+                      </s_sidebar_element>
+                      <s_sidebar_element>
+                        <tt_html_comment>[nav] 방명록</tt_html_comment>
+                        <li className="w-full flex relative">
+                          <NavButton
+                            id="nav-guestbook-button"
+                            className="tt-body-guestbook:bg-color-2 tt-body-guestbook:text-color-1"
+                            href="/guestbook"
+                          >
+                            방명록
+                          </NavButton>
+                        </li>
+                      </s_sidebar_element>
+                      <s_sidebar_element>
+                        <tt_html_comment>[nav] 관리</tt_html_comment>
+                        <li className="w-full flex relative">
+                          <NavButton id="nav-blog-manage-button" href="/manage">
+                            관리
+                          </NavButton>
+                        </li>
+                      </s_sidebar_element>
+                    </s_sidebar>
                   </ul>
                 </nav>
               </div>
