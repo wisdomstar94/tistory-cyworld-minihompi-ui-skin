@@ -1,3 +1,4 @@
+import { AdArea } from "./components/ad-area/ad-area.component";
 import { MainContainer } from "./components/layouts/main-container/main-container.component";
 import { Script } from "./components/script/script.component";
 import "./index.scss";
@@ -20,7 +21,11 @@ export default function App() {
           `}
         />
 
+        <AdArea upper />
+
         <MainContainer />
+
+        <AdArea lower />
       </body>
     </html>
   );
