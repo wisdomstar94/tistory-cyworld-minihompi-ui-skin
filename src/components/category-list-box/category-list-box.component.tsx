@@ -9,7 +9,7 @@ export function CategoryListBox() {
       <div
         className={cn(
           "w-full flex flex-wrap gap-1 relative text-xs",
-          "hidden tt-body-category:flex tt-body-page:flex tt-body-search:flex"
+          "hidden tt-body-category:flex tt-body-page:flex tt-body-search:flex tt-body-notice:flex"
           //
         )}
         data-title="category-list-area"
@@ -36,6 +36,10 @@ export function CategoryListBox() {
         </s_search>
         <div className="w-full" />
         [##_category_list_##]
+        <div className="w-full h-[1px] bg-color-3/20" />
+        <a href="/notice" id="category-list-notice-menu">
+          공지사항
+        </a>
       </div>
       <Script
         html={`

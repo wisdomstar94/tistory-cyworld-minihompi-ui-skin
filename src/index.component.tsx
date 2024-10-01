@@ -1,4 +1,5 @@
 import { MainContainer } from "./components/layouts/main-container/main-container.component";
+import { Script } from "./components/script/script.component";
 import "./index.scss";
 
 export default function App() {
@@ -13,6 +14,12 @@ export default function App() {
         <title></title>
       </head>
       <body id="[##_body_id_##]">
+        <Script
+          html={`
+            checkPage();
+          `}
+        />
+
         <MainContainer />
       </body>
     </html>

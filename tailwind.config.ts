@@ -17,6 +17,7 @@ const staticVariantPlugin: PluginCreator = ({ addVariant }) => {
     "#tt-body-guestbook&",
   ]);
   addVariant("tt-body-location", ["#tt-body-location &", "#tt-body-location&"]);
+  addVariant("tt-body-notice", ["#tt-body-notice &", "#tt-body-notice&"]); // custom
 
   addVariant("today_is_not_bad", [".today_is_not_bad &", ".today_is_not_bad&"]);
   addVariant("today_is_good", [".today_is_good &", ".today_is_good&"]);
