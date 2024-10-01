@@ -1,0 +1,287 @@
+#article-description {
+  > div {
+    *[style*="background-color: #ffffff;"] {
+      // @apply bg-transparent;
+      background-color: transparent !important;
+    }
+
+    *[style*="color: #000000;"],
+    *[style*="color: #1f2328;"] {
+      // @apply bg-transparent;
+      color: inherit !important;
+    }
+
+    // *[class*="filename"] {
+    //   // @apply bg-transparent;
+    //   color: color-mix(in hsl, var(--tds-light-color-3) 80%, transparent) !important;
+    // }
+
+    // 제목
+    h1 {
+      @apply text-5xl mt-4 mb-2;
+      // scroll-margin: 60px;
+    }
+    h2 {
+      @apply text-4xl mt-4 mb-2;
+      // scroll-margin: 60px;
+    }
+    h3 {
+      @apply text-3xl mt-4 mb-2;
+      // scroll-margin: 60px;
+    }
+    h4 {
+      @apply text-2xl mt-4 mb-2;
+      // scroll-margin: 60px;
+    }
+    h5 {
+      @apply text-xl mt-4 mb-2;
+      // scroll-margin: 60px;
+    }
+    h6 {
+      @apply text-lg mt-4 mb-2;
+      // scroll-margin: 60px;
+    }
+
+    // 코드블럭
+    li code {
+      @apply p-1 box-border rounded-md relative opacity-100;
+    }
+
+    pre {
+      code {
+        @apply p-5 box-border rounded-lg mt-1 mb-3 relative opacity-100 block;
+        // visibility: visible;
+      }
+
+      &:has(code) {
+        @apply block relative;
+
+        &::after {
+          content: "";
+          mask-image: url("./images/copy.svg");
+          mask-repeat: no-repeat;
+          mask-position: center center;
+          mask-size: 24px 24px;
+          @apply w-[24px] h-[24px] inline-flex cursor-pointer absolute top-4 right-4 bg-color-3/50;
+        }
+
+        &.my-active {
+          &::after {
+            @apply bg-color-3/80;
+          }
+        }
+
+        &.my-checked {
+          &::after {
+            mask-image: url("./images/copy-check.svg");
+          }
+        }
+      }
+    }
+
+    // 테이블
+    &:not(.another_category) table {
+      width: 100%;
+      @apply border-color-3/50 border-t border-l;
+
+      thead {
+        tr {
+          th {
+            @apply border-color-3/50 border-r border-b px-2 py-1;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            @apply border-color-3/50 border-r border-b px-2 py-0.5;
+          }
+        }
+      }
+
+      &[data-ke-style="style1"],
+      &[data-ke-style="style2"],
+      &[data-ke-style="style3"] {
+        thead {
+          tr {
+            th {
+              @apply border-b-2;
+            }
+          }
+        }
+
+        &:not(:has(thead)) {
+          tbody {
+            tr {
+              &:first-child {
+                td {
+                  @apply border-b-2;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &[data-ke-style="style4"],
+      &[data-ke-style="style5"],
+      &[data-ke-style="style6"],
+      &[data-ke-style="style7"] {
+        tbody {
+          tr {
+            &:nth-child(2n) {
+              td {
+                @apply bg-color-3/5;
+              }
+            }
+          }
+        }
+      }
+
+      &[data-ke-style="style8"],
+      &[data-ke-style="style9"],
+      &[data-ke-style="style10"],
+      &[data-ke-style="style11"] {
+        @apply border-l-0;
+
+        thead {
+          tr {
+            th {
+              @apply border-r-0 border-b-2;
+            }
+          }
+        }
+
+        &:not(:has(thead)) {
+          tbody {
+            tr:first-child {
+              td {
+                @apply border-r-0 border-b-2;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              @apply border-r-0;
+            }
+          }
+        }
+      }
+
+      &[data-ke-style="style12"],
+      &[data-ke-style="style13"],
+      &[data-ke-style="style14"],
+      &[data-ke-style="style15"] {
+        thead {
+          tr {
+            th {
+              @apply bg-color-1/20;
+            }
+          }
+        }
+
+        &:not(:has(thead)) {
+          tbody {
+            tr:first-child {
+              td {
+                @apply bg-color-1/20;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            &:first-child {
+              td {
+                color: inherit;
+              }
+            }
+
+            td {
+              @apply bg-transparent;
+
+              &:first-child {
+                @apply bg-color-3/5;
+              }
+            }
+          }
+        }
+      }
+
+      &[data-ke-style="style16"] {
+        @apply border-l-0 border-t-0;
+
+        thead {
+          tr {
+            th {
+              @apply border-r-0 border-b-0;
+            }
+          }
+        }
+
+        &:not(:has(thead)) {
+          tbody {
+            tr:first-child {
+              td {
+                @apply border-r-0 border-b-0;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              @apply border-r-0 border-b-0;
+            }
+          }
+        }
+      }
+    }
+
+    // 리스트
+    ul,
+    ol {
+      @apply pl-5 my-1;
+
+      li {
+      }
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    // 인용
+    blockquote {
+      @apply text-color-3/80;
+
+      &[data-ke-style="style2"] {
+        @apply flex items-center gap-2 relative;
+
+        &::before {
+          content: "";
+          @apply inline-flex w-[4px] h-[16px] bg-color-1;
+        }
+      }
+    }
+
+    // 링크
+    a[href] {
+      @apply text-color-1/70 hover:text-color-1;
+    }
+
+    figure {
+      @apply mt-1 mb-4;
+    }
+  }
+}

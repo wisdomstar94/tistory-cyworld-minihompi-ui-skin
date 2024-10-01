@@ -99,3 +99,56 @@ function onClickPostUrlCopyButton() {
 }
 
 (window as any).onClickPostUrlCopyButton = onClickPostUrlCopyButton;
+
+function checkArticlePermalinkCategoryName() {
+  const categoryFullName = document.querySelector<HTMLElement>(
+    `[data-title="article-category-name"]`
+  )?.textContent;
+
+  if (typeof categoryFullName !== "string") return;
+
+  const ul = document.querySelector<HTMLElement>("ul.tt_category");
+  if (ul === null) return;
+
+  const categorySplit = categoryFullName.split("/");
+  if (categorySplit.length === 2) {
+    // parent + children
+    const categoryName = categorySplit[0].trim();
+    const subCategoryName = categorySplit[1].trim();
+    const linkItems = ul.querySelectorAll<HTMLElement>("a.link_item");
+    linkItems.forEach((item) => {
+      const html = item.innerHTML.replace("\n", "");
+      const htmlSplit = html.split('<span class="').map((x) => x.trim());
+      const parentCategoryName = htmlSplit[0];
+
+      const subLinkItems =
+        item.parentElement?.querySelectorAll<HTMLElement>("a.link_sub_item");
+      subLinkItems?.forEach((item2) => {
+        const html = item2.innerHTML.replace("\n", "");
+        const htmlSplit = html.split('<span class="').map((x) => x.trim());
+        const childCategoryName = htmlSplit[0];
+
+        if (
+          parentCategoryName === categoryName &&
+          childCategoryName === subCategoryName
+        ) {
+          item2.classList.add("my-active");
+        }
+      });
+    });
+  } else {
+    // only parent
+    const categoryName = categorySplit[0].trim();
+    const linkItems = ul.querySelectorAll<HTMLElement>("a.link_item");
+    linkItems.forEach((item) => {
+      const html = item.innerHTML.replace("\n", "");
+      const htmlSplit = html.split('<span class="').map((x) => x.trim());
+      if (htmlSplit[0] === categoryName) {
+        item.classList.add("my-active");
+      }
+    });
+  }
+}
+
+(window as any).checkArticlePermalinkCategoryName =
+  checkArticlePermalinkCategoryName;

@@ -1,6 +1,7 @@
 import { IPostsPermalinkItem } from "./posts-permalink-item.type";
 import { cn } from "@/utils/cn";
 import "./posts-permalink-item.scss";
+import { Script } from "@/components/script/script.component";
 
 export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
   const { postType } = props;
@@ -41,13 +42,23 @@ export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
             {/* description */}
             <div
               className="w-full block relative mt-2"
-              data-title="article-description"
+              id="article-description"
             >
               [##_article_rep_desc_##]
+            </div>
+
+            {/* category name */}
+            <div className="hidden" data-title="article-category-name">
+              [##_article_rep_category_##]
             </div>
           </div>
         </td>
       </tr>
+      <Script
+        html={`
+          checkArticlePermalinkCategoryName();
+        `}
+      />
     </>
   );
 }
