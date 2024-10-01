@@ -104,7 +104,7 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
               tt-onclick={`[##_${prefix}_onclick_submit_##]`}
               className="w-full h-full flex items-center justify-center p-2 box-border text-xs bg-color-3/10 cursor-pointer"
             >
-              댓글 작성
+              {title} 작성
             </button>
           </div>
         </div>

@@ -21,3 +21,29 @@
     background-size: 30px 30px;
   }
 }
+
+#tag-list {
+  font-size: 0;
+  @apply w-full flex flex-wrap gap-1 relative box-border;
+
+  a {
+    @apply inline-flex items-center relative px-2 py-1 text-xs rounded-md;
+
+    &::before {
+      content: "#";
+      @apply inline-flex flex-shrink-0 flex-grow-0;
+    }
+
+    &.my-active {
+      @apply font-extrabold;
+    }
+  }
+}
+
+#tt-body-page {
+  #tag-list {
+    a {
+      @apply bg-color-3/10;
+    }
+  }
+}

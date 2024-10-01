@@ -4,6 +4,7 @@ import { MiniRoom } from "@/components/mini-room/mini-room.component";
 import { NavButton } from "@/components/nav-button/nav-button.component";
 import { Pagination } from "@/components/pagination/pagination.component";
 import { Posts } from "@/components/post/posts/posts.component";
+import { TagListBox } from "@/components/tag-list-box/tag-list-box.component";
 import { TitleBar } from "@/components/title-bar/title-bar.component";
 import { TitleBar2 } from "@/components/title-bar2/title-bar2.component";
 import { Var } from "@/consts/torytis-variable-object";
@@ -118,9 +119,18 @@ export function MainContainer() {
                 </div>
 
                 {/* 2 */}
-                <div className="min-w-0 min-h-0 relative flex items-end">
-                  <div className="w-full block pl-2 font-bold text-lg leading-5 text-color-1 overflow-hidden whitespace-nowrap overflow-ellipsis">
+                <div className="min-w-0 min-h-0 relative flex items-end gap-2 justify-between">
+                  <div className="inline-block pl-2 font-bold text-lg leading-5 text-color-1 overflow-hidden whitespace-nowrap overflow-ellipsis">
                     [##_title_##]
+                  </div>
+                  <div className="flex-shrink-0 flex-grow-0">
+                    <a
+                      href="/manage"
+                      className="inline-flex text-xs text-color-3/50 hover:underline"
+                    >
+                      블로그 관리
+                    </a>
+                    <div className="inline-flex w-[6px]"></div>
                   </div>
                 </div>
 
@@ -134,6 +144,14 @@ export function MainContainer() {
                         <s_sidebar_element>
                           <tt_html_comment>카테고리 목록</tt_html_comment>
                           <CategoryListBox />
+                        </s_sidebar_element>
+                      </s_sidebar>
+
+                      {/* 태그 목록 */}
+                      <s_sidebar>
+                        <s_sidebar_element>
+                          <tt_html_comment>태그 목록</tt_html_comment>
+                          <TagListBox />
                         </s_sidebar_element>
                       </s_sidebar>
 
@@ -420,6 +438,21 @@ export function MainContainer() {
                             href="/notice"
                           >
                             공지사항
+                          </NavButton>
+                        </li>
+                      </s_sidebar_element>
+                      <s_sidebar_element>
+                        <tt_html_comment>[nav] 태그</tt_html_comment>
+                        <li className="w-full flex relative">
+                          <NavButton
+                            id="nav-notice-button"
+                            className={cn(
+                              "tt-body-tag:bg-color-2 tt-body-tag:text-color-1",
+                              "tt-body-tag-index:bg-color-2 tt-body-tag-index:text-color-1"
+                            )}
+                            href="/tag"
+                          >
+                            태그
                           </NavButton>
                         </li>
                       </s_sidebar_element>

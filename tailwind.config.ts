@@ -22,6 +22,10 @@ const staticVariantPlugin: PluginCreator = ({ addVariant }) => {
     "#tt-body-notice-page &",
     "#tt-body-notice-page&",
   ]); // custom
+  addVariant("tt-body-tag-index", [
+    "#tt-body-tag-index &",
+    "#tt-body-tag-index&",
+  ]); // custom
 
   addVariant("today_is_not_bad", [".today_is_not_bad &", ".today_is_not_bad&"]);
   addVariant("today_is_good", [".today_is_good &", ".today_is_good&"]);

@@ -9,14 +9,16 @@ export function Posts() {
         data-title="article-list"
         className={cn(
           "w-full relative text-xs",
-          "hidden tt-body-category:table tt-body-page:block tt-body-search:table tt-body-notice:table tt-body-notice-page:block"
+          "hidden tt-body-page:block tt-body-notice-page:block",
+          "tt-body-category:table tt-body-search:table tt-body-notice:table tt-body-tag-index:table"
           //
         )}
       >
         <thead
           className={cn(
             "border-t border-t-color-3/30 border-b border-b-color-3/15",
-            "hidden tt-body-category:table-header-group tt-body-search:table-header-group tt-body-notice:table-header-group"
+            "hidden",
+            "tt-body-category:table-header-group tt-body-search:table-header-group tt-body-notice:table-header-group tt-body-tag-index:table-header-group"
           )}
         >
           <tr>
@@ -29,7 +31,8 @@ export function Posts() {
         <tbody
           className={cn(
             "before:w-full before:h-[3px] before:block border-b border-b-color-3/15 after:h-[3px] after:block relative",
-            "border-b-0 tt-body-category:border-b tt-body-notice:border-b",
+            "border-b-0",
+            "tt-body-category:border-b tt-body-notice:border-b tt-body-tag-index:border-b",
             "tt-body-page:block tt-body-notice-page:block"
           )}
         >

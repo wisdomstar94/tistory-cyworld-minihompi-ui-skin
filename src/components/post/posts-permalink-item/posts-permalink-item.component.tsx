@@ -46,6 +46,11 @@ export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
               </div>
             </div>
 
+            {/* tag row */}
+            <s_tag_label>
+              <div id="tag-list">[##_tag_label_rep_##]</div>
+            </s_tag_label>
+
             {/* description */}
             <div
               className="w-full block relative mt-2"
