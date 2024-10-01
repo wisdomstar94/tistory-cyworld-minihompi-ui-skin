@@ -399,7 +399,8 @@ export function MainContainer() {
                             id="nav-category-button"
                             className={cn(
                               "tt-body-category:bg-color-2 tt-body-category:text-color-1",
-                              "tt-body-page:bg-color-2 tt-body-page:text-color-1"
+                              "tt-body-page:bg-color-2 tt-body-page:text-color-1",
+                              "tt-body-search:bg-color-2 tt-body-search:text-color-1"
                             )}
                             href="/category"
                           >

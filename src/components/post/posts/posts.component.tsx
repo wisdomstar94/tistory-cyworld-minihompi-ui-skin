@@ -67,6 +67,26 @@ export function Posts() {
           </tr>
         </tbody>
       </table>
+      <div className="w-full flex justify-end items-center relative">
+        <a
+          className={cn(
+            "px-1 py-0.5 cursor-pointer border border-color-3/30 rounded text-color-3/50 text-xs",
+            "hidden tt-body-category:inline-flex tt-body-search:inline-flex"
+          )}
+          href="/manage/post"
+        >
+          글쓰기
+        </a>
+        <a
+          className={cn(
+            "px-1 py-0.5 cursor-pointer border border-color-3/30 rounded text-color-3/50 text-xs",
+            "hidden tt-body-notice:inline-flex"
+          )}
+          href="/manage/notice"
+        >
+          공지사항 쓰기
+        </a>
+      </div>
     </>
   );
 }
