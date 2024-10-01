@@ -2,6 +2,10 @@
   ul.tt_category {
     @apply w-full relative;
 
+    img[alt="N"] {
+      @apply mt-0.5;
+    }
+
     > li {
       @apply w-full flex flex-col;
 

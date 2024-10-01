@@ -48,22 +48,25 @@ export function CommentList(props: ICommnetList.Props) {
                       <div className="inline-flex font-bold text-color-3/70">
                         {`[##_${prefix}_rep_name_##]`}
                       </div>
-                      <div className="inline-flex text-color-3/70">
-                        ({`[##_${prefix}_rep_date_##]`})
+                      <div className="inline-flex text-color-3/70 gap-1">
+                        {`[##_${prefix}_rep_date_##]`}
                       </div>
                     </div>
 
                     <div className="inline-flex items-center gap-2 relative flex-shrink-0 flex-grow-0 text-color-3/70">
                       <ul className="inline-flex flex-wrap gap-2 relative">
-                        <li
-                          className={cn(
-                            "cursor-pointer text-xs text-color-3/60 hover:underline"
-                          )}
-                          data-link="[##_rp_rep_link_##]"
-                          tt-onclick={`commentLinkCopyButtonClick(this);`}
-                        >
-                          링크 복사
-                        </li>
+                        {!isGuestBook && (
+                          <li
+                            className={cn(
+                              "cursor-pointer text-xs text-color-3/60 hover:underline"
+                            )}
+                            data-link="[##_rp_rep_link_##]"
+                            tt-onclick={`commentLinkCopyButtonClick(this);`}
+                          >
+                            링크 복사
+                          </li>
+                        )}
+
                         <li
                           className={cn(
                             "cursor-pointer text-xs text-color-3/60 hover:underline"
@@ -93,7 +96,7 @@ export function CommentList(props: ICommnetList.Props) {
                         alt="댓글 작성자 프로필사진"
                       />
                     </div>
-                    <div className="w-full block relative">
+                    <div className="w-full block relative text-sm">
                       {`[##_${prefix}_rep_desc_##]`}
                     </div>
                   </div>
@@ -116,15 +119,18 @@ export function CommentList(props: ICommnetList.Props) {
                         </span>
                         <span>&nbsp;&nbsp;</span>
                         <ul className="inline flex-wrap gap-2 relative">
-                          <li
-                            className={cn(
-                              "cursor-pointer text-xs text-color-3/40 hover:underline inline"
-                            )}
-                            data-link="[##_rp_rep_link_##]"
-                            tt-onclick={`commentLinkCopyButtonClick(this);`}
-                          >
-                            링크 복사&nbsp;&nbsp;
-                          </li>
+                          {!isGuestBook && (
+                            <li
+                              className={cn(
+                                "cursor-pointer text-xs text-color-3/40 hover:underline inline"
+                              )}
+                              data-link="[##_rp_rep_link_##]"
+                              tt-onclick={`commentLinkCopyButtonClick(this);`}
+                            >
+                              링크 복사&nbsp;&nbsp;
+                            </li>
+                          )}
+
                           <li
                             className={cn(
                               "cursor-pointer text-xs text-color-3/40 hover:underline inline"

@@ -9,14 +9,14 @@ export function Posts() {
         data-title="article-list"
         className={cn(
           "w-full relative text-xs",
-          "hidden tt-body-category:table tt-body-page:block"
+          "hidden tt-body-category:table tt-body-page:block tt-body-search:table"
           //
         )}
       >
         <thead
           className={cn(
             "border-t border-t-color-3/30 border-b border-b-color-3/15",
-            "hidden tt-body-category:table-header-group"
+            "hidden tt-body-category:table-header-group tt-body-search:table-header-group"
           )}
         >
           <tr>

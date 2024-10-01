@@ -8,7 +8,7 @@ export function Pagination() {
         <div
           className={cn(
             "w-full flex-wrap justify-center items-center content-center gap-0.5 relative box-border px-content-area-padding",
-            "hidden tt-body-category:flex"
+            "flex tt-body-index:hidden"
           )}
         >
           <a

@@ -32,7 +32,7 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
           <ul className="w-full relative flex flex-wrap gap-2 items-center">
             <GuestComp>
               <li className="inline-flex gap-1 relative items-center">
-                <label>이름</label>
+                <label className="text-xs">이름</label>
                 <input
                   type="text"
                   className={cn(
@@ -40,7 +40,7 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
                     "bg-transparent focus:outline-none",
                     "placeholder:text-color-3/50",
                     "border border-color-3/20 box-border",
-                    "px-2 py-0.5"
+                    "px-2 py-0.5 text-xs"
                   )}
                   name={`[##_${prefix}_input_name_##]`}
                   tt-value={`[##_guest_name_##]`}
@@ -48,7 +48,7 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
                 />
               </li>
               <li className="inline-flex gap-1 relative items-center">
-                <label>비밀번호</label>
+                <label className="text-xs">비밀번호</label>
                 <input
                   type="password"
                   className={cn(
@@ -56,7 +56,7 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
                     "bg-transparent focus:outline-none",
                     "placeholder:text-color-3/50",
                     "border border-color-3/20 box-border",
-                    "px-2 py-0.5"
+                    "px-2 py-0.5 text-xs"
                   )}
                   maxLength={8}
                   name={`[##_${prefix}_input_password_##]`}
@@ -67,13 +67,15 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
             </GuestComp>
 
             <li className="inline-flex gap-1 relative items-center">
-              <label htmlFor={`[##_rp_input_is_secret_##]`}>비밀글</label>
+              <label className="text-xs" htmlFor={`[##_rp_input_is_secret_##]`}>
+                비밀글
+              </label>
               <input
                 type="checkbox"
                 data-title="secret-checkbox"
                 id={`[##_rp_input_is_secret_##]`}
                 name={`[##_rp_input_is_secret_##]`}
-                className="w-[16px] h-[16px] bg-transparent border border-color-3/60 other/secret-checkbox"
+                className="w-[16px] h-[16px] bg-transparent border border-color-3/60 other/secret-checkbox text-xs"
               />
             </li>
           </ul>
@@ -91,7 +93,8 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
                 "resize-none",
                 "bg-transparent",
                 "border border-color-3/20 box-border",
-                "p-2"
+                "p-2",
+                "text-xs"
               )}
             ></textarea>
           </div>

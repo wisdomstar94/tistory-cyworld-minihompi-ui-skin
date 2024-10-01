@@ -1,4 +1,5 @@
 import { CategoryListBox } from "@/components/category-list-box/category-list-box.component";
+import { GuestBook } from "@/components/guest-book/guest-book.component";
 import { MiniRoom } from "@/components/mini-room/mini-room.component";
 import { NavButton } from "@/components/nav-button/nav-button.component";
 import { Pagination } from "@/components/pagination/pagination.component";
@@ -143,7 +144,7 @@ export function MainContainer() {
                           <div
                             className={cn(
                               "w-full h-[120px] flex-shrink-0 flex-grow-0 relative border box-border border-color-3/10 rounded-sm overflow-hidden",
-                              "hidden tt-body-index:flex"
+                              "hidden tt-body-index:flex tt-body-guestbook:flex"
                             )}
                           >
                             <img
@@ -161,7 +162,7 @@ export function MainContainer() {
                       <div
                         className={cn(
                           "w-full h-[1px] flex-shrink-0 flex-grow-0 bg-color-3/10",
-                          "hidden tt-body-index:flex"
+                          "hidden tt-body-index:flex tt-body-guestbook:flex"
                         )}
                       />
 
@@ -169,7 +170,7 @@ export function MainContainer() {
                       <div
                         className={cn(
                           "w-full border box-border border-color-3/10 rounded-sm p-1 text-sm flex-shrink-0 flex-grow-0 justify-center items-center",
-                          "hidden tt-body-index:flex"
+                          "hidden tt-body-index:flex tt-body-guestbook:flex"
                         )}
                       >
                         <div className="inline-flex gap-2">
@@ -226,7 +227,7 @@ export function MainContainer() {
                       <div
                         className={cn(
                           "w-full h-[50px] flex-shrink-0 flex-grow-0 gap-1 relative overflow-y-auto box-border",
-                          "hidden tt-body-index:flex"
+                          "hidden tt-body-index:flex tt-body-guestbook:flex"
                         )}
                       >
                         <div className="w-full text-xs min-w-0 min-h-0">
@@ -237,13 +238,16 @@ export function MainContainer() {
                       </div>
 
                       <div
-                        className={cn("w-full", "hidden tt-body-index:flex")}
+                        className={cn(
+                          "w-full",
+                          "hidden tt-body-index:flex tt-body-guestbook:flex"
+                        )}
                       />
 
                       <div
                         className={cn(
                           "w-full flex-shrink-0 flex-grow-0 flex-col gap-1 relative",
-                          "hidden tt-body-index:flex"
+                          "hidden tt-body-index:flex tt-body-guestbook:flex"
                         )}
                       >
                         <TitleBar>Profile Name</TitleBar>
@@ -253,7 +257,10 @@ export function MainContainer() {
                       </div>
 
                       <div
-                        className={cn("w-full", "hidden tt-body-index:flex")}
+                        className={cn(
+                          "w-full",
+                          "hidden tt-body-index:flex tt-body-guestbook:flex"
+                        )}
                       />
 
                       <s_sidebar>
@@ -262,7 +269,7 @@ export function MainContainer() {
                           <div
                             className={cn(
                               "min-w-0 min-h-0 w-full h-full flex flex-col gap-1 relative",
-                              "hidden tt-body-index:flex"
+                              "hidden tt-body-index:flex tt-body-guestbook:flex"
                             )}
                           >
                             <TitleBar>Recent Comment</TitleBar>
@@ -360,6 +367,9 @@ export function MainContainer() {
 
                       {/* posts */}
                       <Posts />
+
+                      {/* guestbook */}
+                      <GuestBook />
 
                       <Pagination />
                     </div>
