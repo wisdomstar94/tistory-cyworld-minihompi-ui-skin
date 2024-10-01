@@ -1,5 +1,5 @@
 {
-    "name": "tistory-cyworld-ui-skin",
+    "name": "tistory-cyworld-minihompi-ui-skin",
     "version": "0.0.1",
     "scripts": {
         "build": "torytis build",
