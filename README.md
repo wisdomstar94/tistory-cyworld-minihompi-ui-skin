@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#" target="_blank">
-    <img alt="Tistory Discord UI Skin" src="./src/public/preview560.jpg" width="400" style="max-width: 100%;" />
+    <img alt="Tistory Cyworld Minihompi UI Skin" src="./src/public/preview560.jpg" width="400" style="max-width: 100%;" />
   </a>
 </p>
 
@@ -29,4 +29,4 @@
 
 ## 라이선스
 
-@wisdomstar94/tistory-discord-ui-skin 는 [MIT 라이선스](./LICENSE)가 적용됩니다.
+@wisdomstar94/tistory-cyworld-minihompi-ui-skin 는 [MIT 라이선스](./LICENSE)가 적용됩니다.

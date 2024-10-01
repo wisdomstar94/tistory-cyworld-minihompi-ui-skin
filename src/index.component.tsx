@@ -1,4 +1,5 @@
 import { AdArea } from "./components/ad-area/ad-area.component";
+import { LatestVersionCheck } from "./components/latest-version-check/latest-version-check.component";
 import { MainContainer } from "./components/layouts/main-container/main-container.component";
 import { Script } from "./components/script/script.component";
 import "./index.scss";
@@ -26,6 +27,8 @@ export default function App() {
         <MainContainer />
 
         <AdArea lower />
+
+        <LatestVersionCheck />
       </body>
     </html>
   );
