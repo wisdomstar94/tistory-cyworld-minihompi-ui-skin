@@ -1,3 +1,8 @@
+## v0.0.4
+
+- `axios` 패키지 종속성 추가
+- `@wisdomstar94/vanilla-js-util` 종속성 버전을 `0.0.12` 로 변경
+
 ## v0.0.3
 
 - 스킨 옵션에서 `primary color`, `primary strong color` 를 지정할 수 있도록 변경하여 미니홈피를 원하는 색상 테마로 꾸밀 수 있도록 하였습니다.
