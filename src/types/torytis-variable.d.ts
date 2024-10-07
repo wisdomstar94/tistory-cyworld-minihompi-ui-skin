@@ -11,5 +11,9 @@ declare namespace JSX {
 		's_not_var_mini_room_img_url': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
 		's_if_var_mini_room_display_flag': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
 		's_not_var_mini_room_display_flag': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_if_var_primary_color': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_not_var_primary_color': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_if_var_primary_strong_color': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_not_var_primary_strong_color': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
 	}
 }

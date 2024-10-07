@@ -127,6 +127,24 @@
         <default>mini_room_display_flag_show</default>
       </variable>
     </variablegroup>
+    <variablegroup name="테마 설정">
+      <variable>
+        <name>primary_color</name>
+        <label>
+          <![CDATA[ primary color (hex, rgb 등) ]]>
+        </label>
+        <description>primary color 를 입력하세요.</description>
+        <type>STRING</type>
+      </variable>
+      <variable>
+        <name>primary_strong_color</name>
+        <label>
+          <![CDATA[ primary strong color (hex, rgb 등) ]]>
+        </label>
+        <description>primary strong color 을 입력하세요.</description>
+        <type>STRING</type>
+      </variable>
+    </variablegroup>
   </variables>
   <cover>
     <!-- example -->

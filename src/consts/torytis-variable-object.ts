@@ -6,4 +6,6 @@ export const Var = {
 	"[##_var_today_is_##]": "[##_var_today_is_##]",
 	"[##_var_mini_room_img_url_##]": "[##_var_mini_room_img_url_##]",
 	"[##_var_mini_room_display_flag_##]": "[##_var_mini_room_display_flag_##]",
+	"[##_var_primary_color_##]": "[##_var_primary_color_##]",
+	"[##_var_primary_strong_color_##]": "[##_var_primary_strong_color_##]",
 };
