@@ -95,8 +95,9 @@ export function MainContainer() {
                 {/* 1 */}
                 <div className="min-w-0 min-h-0 relative flex items-stretch">
                   <s_sidebar>
+                    <tt_html_comment>방문자 수</tt_html_comment>
                     <s_sidebar_element>
-                      <tt_html_comment>방문자 수</tt_html_comment>
+                      <tt_html_comment>(사이드바 1) 방문자 수</tt_html_comment>
                       <div className="w-full flex relative items-end text-xs justify-center pt-3">
                         <div className="flex items-center gap-5 scale-y-[0.9]">
                           <div className="inline-flex gap-2 relative">
@@ -141,24 +142,33 @@ export function MainContainer() {
                     <div className="w-full h-full bg-color-2 rounded-lg box-border py-1.5 px-2.5 overflow-y-auto flex flex-col gap-1.5 items-start content-start">
                       {/* 카테고리 목록 */}
                       <s_sidebar>
+                        <tt_html_comment>카테고리 목록</tt_html_comment>
                         <s_sidebar_element>
-                          <tt_html_comment>카테고리 목록</tt_html_comment>
+                          <tt_html_comment>
+                            (사이드바 2) 카테고리 목록
+                          </tt_html_comment>
                           <CategoryListBox />
                         </s_sidebar_element>
                       </s_sidebar>
 
                       {/* 태그 목록 */}
                       <s_sidebar>
+                        <tt_html_comment>태그 목록</tt_html_comment>
                         <s_sidebar_element>
-                          <tt_html_comment>태그 목록</tt_html_comment>
+                          <tt_html_comment>
+                            (사이드바 3) 태그 목록
+                          </tt_html_comment>
                           <TagListBox />
                         </s_sidebar_element>
                       </s_sidebar>
 
                       {/* 프로필 */}
                       <s_sidebar>
+                        <tt_html_comment>블로그 프로필 사진</tt_html_comment>
                         <s_sidebar_element>
-                          <tt_html_comment>블로그 프로필 사진</tt_html_comment>
+                          <tt_html_comment>
+                            (사이드바 4) 블로그 프로필 사진
+                          </tt_html_comment>
                           <div
                             className={cn(
                               "w-full h-[120px] flex-shrink-0 flex-grow-0 relative border box-border border-color-3/10 rounded-sm overflow-hidden",
@@ -282,8 +292,11 @@ export function MainContainer() {
                       />
 
                       <s_sidebar>
+                        <tt_html_comment>최근 댓글</tt_html_comment>
                         <s_sidebar_element>
-                          <tt_html_comment>최근 댓글</tt_html_comment>
+                          <tt_html_comment>
+                            (사이드바 5) 최근 댓글
+                          </tt_html_comment>
                           <div
                             className={cn(
                               "min-w-0 min-h-0 w-full h-full flex flex-col gap-1 relative",
@@ -334,8 +347,11 @@ export function MainContainer() {
                         )}
                       >
                         <s_sidebar>
+                          <tt_html_comment>최근 게시물</tt_html_comment>
                           <s_sidebar_element>
-                            <tt_html_comment>최근 게시물</tt_html_comment>
+                            <tt_html_comment>
+                              (사이드바 6) 최근 게시물
+                            </tt_html_comment>
                             <div className="min-w-0 min-h-0 relative flex-1 flex flex-wrap gap-1">
                               <TitleBar2>최근 게시물</TitleBar2>
                               <div className="w-full relative">
@@ -398,8 +414,9 @@ export function MainContainer() {
                 <nav className="w-[1px] h-auto absolute top-[50px] right-0 z-1 block">
                   <ul className="w-[64px] max-h-[350px] flex flex-col relative gap-0.5">
                     <s_sidebar>
+                      <tt_html_comment>[nav]</tt_html_comment>
                       <s_sidebar_element>
-                        <tt_html_comment>[nav] 홈</tt_html_comment>
+                        <tt_html_comment>(사이드바 7) 홈</tt_html_comment>
                         <li className="w-full flex relative">
                           <NavButton
                             id="nav-home-button"
@@ -411,7 +428,7 @@ export function MainContainer() {
                         </li>
                       </s_sidebar_element>
                       <s_sidebar_element>
-                        <tt_html_comment>[nav] 게시판</tt_html_comment>
+                        <tt_html_comment>(사이드바 7) 게시판</tt_html_comment>
                         <li className="w-full flex relative">
                           <NavButton
                             id="nav-category-button"
@@ -427,7 +444,7 @@ export function MainContainer() {
                         </li>
                       </s_sidebar_element>
                       <s_sidebar_element>
-                        <tt_html_comment>[nav] 공지사항</tt_html_comment>
+                        <tt_html_comment>(사이드바 7) 공지사항</tt_html_comment>
                         <li className="w-full flex relative">
                           <NavButton
                             id="nav-notice-button"
@@ -442,7 +459,7 @@ export function MainContainer() {
                         </li>
                       </s_sidebar_element>
                       <s_sidebar_element>
-                        <tt_html_comment>[nav] 태그</tt_html_comment>
+                        <tt_html_comment>(사이드바 7) 태그</tt_html_comment>
                         <li className="w-full flex relative">
                           <NavButton
                             id="nav-notice-button"
@@ -457,7 +474,7 @@ export function MainContainer() {
                         </li>
                       </s_sidebar_element>
                       <s_sidebar_element>
-                        <tt_html_comment>[nav] 방명록</tt_html_comment>
+                        <tt_html_comment>(사이드바 7) 방명록</tt_html_comment>
                         <li className="w-full flex relative">
                           <NavButton
                             id="nav-guestbook-button"
@@ -469,7 +486,7 @@ export function MainContainer() {
                         </li>
                       </s_sidebar_element>
                       <s_sidebar_element>
-                        <tt_html_comment>[nav] 관리</tt_html_comment>
+                        <tt_html_comment>(사이드바 7) 관리</tt_html_comment>
                         <li className="w-full flex relative">
                           <NavButton id="nav-blog-manage-button" href="/manage">
                             관리
