@@ -45,14 +45,15 @@ export default function App() {
             checkPage();
           `}
         />
+        <s_t3>
+          <AdArea upper />
 
-        <AdArea upper />
+          <MainContainer />
 
-        <MainContainer />
+          <AdArea lower />
 
-        <AdArea lower />
-
-        <LatestVersionCheck />
+          <LatestVersionCheck />
+        </s_t3>
       </body>
     </html>
   );
