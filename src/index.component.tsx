@@ -1,5 +1,6 @@
 import { AdArea } from "./components/ad-area/ad-area.component";
 import { LatestVersionCheck } from "./components/latest-version-check/latest-version-check.component";
+import { Background } from "./components/layouts/background/background.component";
 import { MainContainer } from "./components/layouts/main-container/main-container.component";
 import { Script } from "./components/script/script.component";
 import { Style } from "./components/style/style.component";
@@ -38,14 +39,28 @@ export default function App() {
             `}
           />
         </s_if_var_primary_strong_color>
+        {/* <s_if_var_bg_image_url>
+          <Style
+            html={`
+              html {
+                background-image: url("${Var["[##_var_bg_image_url_##]"]}");
+                background-size: ${Var["[##_var_bg_image_fit_type_##]"]};
+                background-position: center center;
+                background-repeat: no-repeat;
+              }
+            `}
+          />
+        </s_if_var_bg_image_url> */}
       </head>
-      <body id="[##_body_id_##]">
+      <body id="[##_body_id_##]" style={{ backgroundSize: "" }}>
         <Script
           html={`
             checkPage();
           `}
         />
         <s_t3>
+          <Background />
+
           <AdArea upper />
 
           <MainContainer />

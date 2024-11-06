@@ -15,5 +15,11 @@ declare namespace JSX {
 		's_not_var_primary_color': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
 		's_if_var_primary_strong_color': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
 		's_not_var_primary_strong_color': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_if_var_bg_color': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_not_var_bg_color': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_if_var_bg_image_url': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_not_var_bg_image_url': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_if_var_bg_image_fit_type': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_not_var_bg_image_fit_type': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
 	}
 }

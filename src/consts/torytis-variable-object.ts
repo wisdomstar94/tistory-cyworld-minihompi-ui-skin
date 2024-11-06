@@ -8,4 +8,7 @@ export const Var = {
 	"[##_var_mini_room_display_flag_##]": "[##_var_mini_room_display_flag_##]",
 	"[##_var_primary_color_##]": "[##_var_primary_color_##]",
 	"[##_var_primary_strong_color_##]": "[##_var_primary_strong_color_##]",
+	"[##_var_bg_color_##]": "[##_var_bg_color_##]",
+	"[##_var_bg_image_url_##]": "[##_var_bg_image_url_##]",
+	"[##_var_bg_image_fit_type_##]": "[##_var_bg_image_fit_type_##]",
 };

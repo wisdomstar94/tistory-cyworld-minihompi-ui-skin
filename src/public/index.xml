@@ -145,6 +145,39 @@
         <type>STRING</type>
       </variable>
     </variablegroup>
+    <variablegroup name="배경 설정">
+      <variable>
+        <name>bg_color</name>
+        <label>
+          <![CDATA[ background color (hex, rgb 등) ]]>
+        </label>
+        <description>background 에 적용할 color 를 입력하세요.</description>
+        <type>STRING</type>
+      </variable>
+      <variable>
+        <name>bg_image_url</name>
+        <label>
+          <![CDATA[ background image url ]]>
+        </label>
+        <description>background 에 적용할 이미지 url 을 입력하세요.</description>
+        <type>STRING</type>
+      </variable>
+      <variable>
+        <name>bg_image_fit_type</name>
+        <label>
+          <![CDATA[ background image fit type ]]>
+        </label>
+        <description>background 에 적용할 이미지의 fit type 을 선택해주세요.</description>
+        <type>SELECT</type>
+        <option><![CDATA[
+          [
+            {"name":"bg_image_fit_type_cover2", "label":"cover", "value":"cover"},
+            {"name":"bg_image_fit_type_contain2", "label":"contain", "value":"contain"}
+          ]
+        ]]></option>
+        <default>cover</default>
+      </variable>
+    </variablegroup>
   </variables>
   <cover>
     <!-- example -->

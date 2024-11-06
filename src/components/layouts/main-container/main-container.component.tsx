@@ -13,8 +13,8 @@ import { cn } from "@/utils/cn";
 export function MainContainer() {
   return (
     <>
-      <div className="w-full h-full fixed top-0 left-0 flex flex-wrap items-center justify-center">
-        <div className="w-full max-w-[800px] h-[500px] m-4 relative">
+      <div className="w-full h-full fixed top-0 left-0 flex flex-wrap items-center justify-center z-[1]">
+        <div className="w-full max-w-[900px] h-[540px] m-4 relative">
           {/* bg 1 */}
           <div
             data-title="bg-1"
@@ -412,7 +412,7 @@ export function MainContainer() {
 
                 {/* right menu area */}
                 <nav className="w-[1px] h-auto absolute top-[50px] right-0 z-1 block">
-                  <ul className="w-[64px] max-h-[350px] flex flex-col relative gap-0.5">
+                  <ul className="w-[72px] max-h-[350px] flex flex-col relative gap-0.5">
                     <s_sidebar>
                       <tt_html_comment>[nav]</tt_html_comment>
                       <s_sidebar_element>
