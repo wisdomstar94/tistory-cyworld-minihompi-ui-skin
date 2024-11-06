@@ -14,7 +14,7 @@ export function MainContainer() {
   return (
     <>
       <div className="w-full h-full fixed top-0 left-0 flex flex-wrap items-center justify-center z-[1]">
-        <div className="w-full max-w-[900px] h-[540px] m-4 relative">
+        <div className="w-full max-w-[880px] h-[560px] m-4 relative">
           {/* bg 1 */}
           <div
             data-title="bg-1"
