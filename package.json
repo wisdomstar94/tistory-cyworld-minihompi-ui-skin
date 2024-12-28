@@ -1,6 +1,6 @@
 {
   "name": "tistory-cyworld-minihompi-ui-skin",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
     "build": "torytis build",
     "build:variable": "torytis varbuild",
@@ -35,7 +35,7 @@
     "wait-on": "^8.0.1"
   },
   "dependencies": {
-    "@wisdomstar94/vanilla-js-util": "^0.0.12",
+    "@wisdomstar94/vanilla-js-util": "^0.0.16",
     "axios": "^1.7.7",
     "copy-to-clipboard": "^3.3.3"
   }

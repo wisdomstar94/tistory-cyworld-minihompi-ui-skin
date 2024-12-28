@@ -1,3 +1,4 @@
+import { subscribeElement } from "@wisdomstar94/vanilla-js-util";
 import { getPathname } from "./components/common/functions";
 
 window.addEventListener("load", () => {
@@ -17,3 +18,32 @@ function checkPage() {
 }
 
 (window as any).checkPage = checkPage;
+
+function checkStyleObserver() {
+  const targets = document.querySelectorAll<HTMLElement>(
+    `.style-observer-target`
+  );
+
+  targets.forEach((target) => {
+    revokeHeight(target);
+    subscribeElement({
+      target,
+      options: {
+        attributes: true,
+        attributeOldValue: true,
+      },
+      callback: () => {
+        revokeHeight(target);
+      },
+    });
+  });
+}
+
+function revokeHeight(target: HTMLElement) {
+  const height = target.style.height;
+  if (height === "auto") {
+    target.style.removeProperty("height");
+  }
+}
+
+(window as any).checkStyleObserver = checkStyleObserver;

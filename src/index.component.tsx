@@ -52,7 +52,11 @@ export default function App() {
           />
         </s_if_var_bg_image_url> */}
       </head>
-      <body id="[##_body_id_##]" style={{ backgroundSize: "" }}>
+      <body
+        id="[##_body_id_##]"
+        className="style-observer-target"
+        style={{ backgroundSize: "" }}
+      >
         <Script
           html={`
             checkPage();

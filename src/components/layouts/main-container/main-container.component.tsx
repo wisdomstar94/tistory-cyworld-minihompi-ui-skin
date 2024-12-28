@@ -4,6 +4,7 @@ import { MiniRoom } from "@/components/mini-room/mini-room.component";
 import { NavButton } from "@/components/nav-button/nav-button.component";
 import { Pagination } from "@/components/pagination/pagination.component";
 import { Posts } from "@/components/post/posts/posts.component";
+import { Script } from "@/components/script/script.component";
 import { TagListBox } from "@/components/tag-list-box/tag-list-box.component";
 import { TitleBar } from "@/components/title-bar/title-bar.component";
 import { TitleBar2 } from "@/components/title-bar2/title-bar2.component";
@@ -13,8 +14,8 @@ import { cn } from "@/utils/cn";
 export function MainContainer() {
   return (
     <>
-      <div className="w-full h-full fixed top-0 left-0 flex flex-wrap items-center justify-center z-[1]">
-        <div className="w-full max-w-[880px] h-[560px] m-4 relative">
+      <div className="w-full h-full fixed top-0 left-0 flex flex-wrap items-center justify-center z-[1] style-observer-target">
+        <div className="w-full max-w-[880px] h-[560px] m-4 relative style-observer-target">
           {/* bg 1 */}
           <div
             data-title="bg-1"
@@ -82,12 +83,16 @@ export function MainContainer() {
           </div>
 
           {/* content */}
-          <div className="w-full h-full relative box-border p-10">
-            <div className="w-full h-full flex gap-4 relative">
+          <div
+            className="w-full h-full relative box-border p-10 style-observer-target"
+            // id="main-container-content-root"
+          >
+            <div className="w-full h-full flex gap-4 relative style-observer-target">
               {/* grid... */}
               <div
                 className={cn(
                   "w-full h-full relative",
+                  "style-observer-target",
                   "grid grid-cols-[222px_1fr] grid-rows-[auto_1fr] gap-y-2 gap-x-4 auto-rows-auto"
                   //
                 )}
@@ -335,10 +340,10 @@ export function MainContainer() {
                 </div>
 
                 {/* 4 */}
-                <div className="min-w-0 min-h-0 relative">
-                  <div className="w-full h-full box-border pl-5 pr-3 py-2.5 border border-color-8 bg-color-2 rounded-xl">
+                <div className="min-w-0 min-h-0 relative style-observer-target">
+                  <div className="w-full h-full box-border pl-5 pr-3 py-2.5 border border-color-8 bg-color-2 rounded-xl style-observer-target">
                     {/* scroll container */}
-                    <div className="w-full h-full overflow-y-auto relative flex flex-wrap gap-2 content-start items-start">
+                    <div className="w-full h-full overflow-y-auto relative flex flex-wrap gap-2 content-start items-start style-observer-target">
                       {/* top */}
                       <div
                         className={cn(
@@ -406,6 +411,12 @@ export function MainContainer() {
                       <GuestBook />
 
                       <Pagination />
+
+                      <Script
+                        html={`
+                          checkStyleObserver();
+                        `}
+                      />
                     </div>
                   </div>
                 </div>
