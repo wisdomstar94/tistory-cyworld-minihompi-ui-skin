@@ -5,6 +5,7 @@ import { MainContainer } from "./components/layouts/main-container/main-containe
 import { Script } from "./components/script/script.component";
 import { Style } from "./components/style/style.component";
 import { Var } from "./consts/torytis-variable-object";
+import "./index.css";
 import "./index.scss";
 
 export default function App() {
