@@ -88,6 +88,8 @@ export default function App() {
           <AdArea lower />
 
           <LatestVersionCheck />
+
+          <div className="text-tcu-color-9 hidden" />
         </s_t3>
       </body>
     </html>
