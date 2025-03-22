@@ -96,14 +96,14 @@ export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
                       maxLength={16}
                       id="[##_article_password_##]"
                       name="[##_article_password_##]"
-                      value=""
+                      tt-value=""
                       tt-onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]"
                       className="border border-tcu-color-3/80 p-1"
                     />
                     <button
                       type="button"
                       className="submit bg-tcu-color-8 text-sm text-tcu-color-3/80 cursor-pointer px-2"
-                      value="submit"
+                      tt-value="submit"
                       tt-onclick="[##_article_dissolve_##]"
                     >
                       확인

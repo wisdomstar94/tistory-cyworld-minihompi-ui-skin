@@ -15,18 +15,18 @@
 @custom-variant tt-body-notice-page (#tt-body-notice-page &, #tt-body-notice-page&);
 @custom-variant tt-body-tag-index (#tt-body-tag-index &, #tt-body-tag-index&);
 
-@custom-variant today-is-not-bad (.today_is_not_bad &, .today_is_not_bad&);
-@custom-variant today-is-good (.today_is_good &, .today_is_good&);
-@custom-variant today-is-pleasure (.today_is_pleasure &, .today_is_pleasure&);
-@custom-variant today-is-happy (.today_is_happy &, .today_is_happy&);
-@custom-variant today-is-sad (.today_is_sad &, .today_is_sad&);
-@custom-variant today-is-soso (.today_is_soso &, .today_is_soso&);
-@custom-variant today-is-blue (.today_is_blue &, .today_is_blue&);
-@custom-variant today-is-angry (.today_is_angry &, .today_is_angry&);
-@custom-variant today-is-flutter (.today_is_flutter &, .today_is_flutter&);
-@custom-variant today-is-expect (.today_is_expect &, .today_is_expect&);
-@custom-variant today-is-annoying (.today_is_annoying &, .today_is_annoying&);
-@custom-variant today-is-bored (.today_is_bored &, .today_is_bored&);
+@custom-variant today_is_not_bad (.today_is_not_bad &, .today_is_not_bad&);
+@custom-variant today_is_good (.today_is_good &, .today_is_good&);
+@custom-variant today_is_pleasure (.today_is_pleasure &, .today_is_pleasure&);
+@custom-variant today_is_happy (.today_is_happy &, .today_is_happy&);
+@custom-variant today_is_sad (.today_is_sad &, .today_is_sad&);
+@custom-variant today_is_soso (.today_is_soso &, .today_is_soso&);
+@custom-variant today_is_blue (.today_is_blue &, .today_is_blue&);
+@custom-variant today_is_angry (.today_is_angry &, .today_is_angry&);
+@custom-variant today_is_flutter (.today_is_flutter &, .today_is_flutter&);
+@custom-variant today_is_expect (.today_is_expect &, .today_is_expect&);
+@custom-variant today_is_annoying (.today_is_annoying &, .today_is_annoying&);
+@custom-variant today_is_bored (.today_is_bored &, .today_is_bored&);
 
 @custom-variant mini-room-display-flag-show (.mini_room_display_flag_show &, .mini_room_display_flag_show&);
 @custom-variant mini-room-display-flag-hide (.mini_room_display_flag_hide &, .mini_room_display_flag_hide&);

@@ -1,5 +1,6 @@
 import { cn } from "@/utils/cn";
 import { IPostsIndexItem } from "./posts-index-item.type";
+import { MdLock } from "react-icons/md";
 import "./posts-index.scss";
 
 export function PostsIndexItem(props: IPostsIndexItem.Props) {
@@ -29,7 +30,13 @@ export function PostsIndexItem(props: IPostsIndexItem.Props) {
             href={`[##_article_rep_link_##]`}
             className="hover:underline flow-root max-w-[160px] whitespace-nowrap overflow-hidden overflow-ellipsis"
           >
-            {`[##_${replacer_prefix}_rep_title_##]`}
+            {postType === "protected" && (
+              <>
+                <MdLock className="inline w-4 h-4 text-tcu-color-3/75" />
+                &nbsp;
+              </>
+            )}
+            <span className="inline">{`[##_${replacer_prefix}_rep_title_##]`}</span>
           </a>
         </td>
         <td className="px-2 py-0.5 text-tcu-color-1">{`[##_${replacer_prefix}_rep_author_##]`}</td>
