@@ -11,4 +11,6 @@ export const Var = {
 	"[##_var_bg_color_##]": "[##_var_bg_color_##]",
 	"[##_var_bg_image_url_##]": "[##_var_bg_image_url_##]",
 	"[##_var_bg_image_fit_type_##]": "[##_var_bg_image_fit_type_##]",
+	"[##_var_comment_profile_icon_url_flag_##]": "[##_var_comment_profile_icon_url_flag_##]",
+	"[##_var_comment_profile_icon_url_##]": "[##_var_comment_profile_icon_url_##]",
 };

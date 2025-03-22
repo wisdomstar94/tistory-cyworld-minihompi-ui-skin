@@ -6,6 +6,7 @@ import { Script } from "./components/script/script.component";
 import { Style } from "./components/style/style.component";
 import { Var } from "./consts/torytis-variable-object";
 import "./index.css";
+import { cn } from "./utils/cn";
 
 export default function App() {
   return (
@@ -39,6 +40,18 @@ export default function App() {
             `}
           />
         </s_if_var_primary_strong_color>
+        <s_if_var_comment_profile_icon_url>
+          <Style
+            html={`
+              .comment-profile-icon {
+                background-image: url("${Var["[##_var_comment_profile_icon_url_##]"]}");
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+              }
+            `}
+          />
+        </s_if_var_comment_profile_icon_url>
         {/* <s_if_var_bg_image_url>
           <Style
             html={`
@@ -54,7 +67,10 @@ export default function App() {
       </head>
       <body
         id="[##_body_id_##]"
-        className="style-observer-target"
+        className={cn(
+          "style-observer-target",
+          Var["[##_var_comment_profile_icon_url_flag_##]"]
+        )}
         style={{ backgroundSize: "" }}
       >
         <Script

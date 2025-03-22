@@ -178,6 +178,31 @@
         <default>cover</default>
       </variable>
     </variablegroup>
+    <variablegroup name="댓글 작성자 프로필 사진 대신 표시할 아이콘 url">
+      <variable>
+        <name>comment_profile_icon_url_flag</name>
+        <label>
+          <![CDATA[ 활성화 여부 ]]>
+        </label>
+        <description>활성화 여부.</description>
+        <type>SELECT</type>
+        <option><![CDATA[
+          [
+            {"name":"comment_profile_icon_url_flag_on", "label":"활성", "value":"comment_profile_icon_url_flag_on"},
+            {"name":"comment_profile_icon_url_flag_off", "label":"비활성", "value":"comment_profile_icon_url_flag_off"}
+          ]
+        ]]></option>
+        <default>comment_profile_icon_url_flag_off</default>
+      </variable>
+      <variable>
+        <name>comment_profile_icon_url</name>
+        <label>
+          <![CDATA[ url ]]>
+        </label>
+        <description>댓글 작성자 프로필 사진 대신 표시할 아이콘 url</description>
+        <type>STRING</type>
+      </variable>
+    </variablegroup>
   </variables>
   <cover>
     <!-- example -->

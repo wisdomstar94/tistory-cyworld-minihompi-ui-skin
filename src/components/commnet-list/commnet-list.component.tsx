@@ -1,6 +1,7 @@
 import { ICommnetList } from "./commnet-list.type";
 import { cn } from "@/utils/cn";
 import "./comment-list.scss";
+import { Var } from "@/consts/torytis-variable-object";
 
 export function CommentList(props: ICommnetList.Props) {
   const { isGuestBook = false } = props;
@@ -89,13 +90,16 @@ export function CommentList(props: ICommnetList.Props) {
 
                   {/* content area */}
                   <div className="w-full flex items-start gap-3 relative">
-                    <div className="w-[100px] h-auto relative flex-shrink-0 flex-grow-0">
+                    <div className="w-10 h-12 inline-flex flex-shrink-0 flex-grow-0 comment-profile-icon comment_profile_icon_url_flag_off:hidden" />
+
+                    <div className="w-[100px] h-auto relative flex-shrink-0 flex-grow-0 comment_profile_icon_url_flag_on:hidden">
                       <img
                         src={`[##_${prefix}_rep_logo_##]`}
                         className="w-full max-h-[140px] object-cover object-center relative"
                         alt="댓글 작성자 프로필사진"
                       />
                     </div>
+
                     <div className="w-full block relative text-sm">
                       {`[##_${prefix}_rep_desc_##]`}
                     </div>
