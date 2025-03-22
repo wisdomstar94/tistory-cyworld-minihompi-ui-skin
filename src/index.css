@@ -90,7 +90,11 @@ html {
   #tt-body-page {
     #tag-list {
       a {
-        background-color: var(--color-tcu-color-3);
+        background-color: color-mix(
+          in hsl,
+          var(--color-tcu-color-3) 10%,
+          transparent
+        );
       }
     }
   }

@@ -46,36 +46,72 @@ export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
               </div>
             </div>
 
-            {/* tag row */}
-            <s_tag_label>
-              <div id="tag-list">[##_tag_label_rep_##]</div>
-            </s_tag_label>
+            {postType !== "protected" && (
+              <>
+                {/* tag row */}
+                <s_tag_label>
+                  <div id="tag-list">[##_tag_label_rep_##]</div>
+                </s_tag_label>
 
-            {/* description */}
-            <div
-              className="w-full block relative mt-2"
-              id="article-description"
-            >
-              [##_article_rep_desc_##]
-            </div>
+                {/* description */}
+                <div
+                  className="w-full block relative mt-2"
+                  id="article-description"
+                >
+                  [##_article_rep_desc_##]
+                </div>
 
-            {/* category name */}
-            <div className="hidden" data-title="article-category-name">
-              [##_article_rep_category_##]
-            </div>
+                {/* category name */}
+                <div className="hidden" data-title="article-category-name">
+                  [##_article_rep_category_##]
+                </div>
 
-            {/* comment */}
-            <s_rp>
-              <div
-                className="w-full mt-4 relative flex flex-wrap gap-6"
-                data-title="comment-container"
-              >
-                <CommentList />
-                <s_rp_input_form>
-                  <CommentInputForm />
-                </s_rp_input_form>
-              </div>
-            </s_rp>
+                {/* comment */}
+                <s_rp>
+                  <div
+                    className="w-full mt-4 relative flex flex-wrap gap-6"
+                    data-title="comment-container"
+                  >
+                    <CommentList />
+                    <s_rp_input_form>
+                      <CommentInputForm />
+                    </s_rp_input_form>
+                  </div>
+                </s_rp>
+              </>
+            )}
+
+            {postType === "protected" && (
+              <>
+                <div className={cn("w-full flex flex-col gap-2 relative")}>
+                  <div className="text-sm text-tcu-color-3/70">
+                    보호되어 있는 글입니다. 비밀번호를 입력해주세요.
+                  </div>
+                  <div className={cn("inline-flex flex-wrap gap-2")}>
+                    <label htmlFor="[##_article_password_##]">
+                      비밀번호:&nbsp;
+                    </label>
+                    <input
+                      type="password"
+                      maxLength={16}
+                      id="[##_article_password_##]"
+                      name="[##_article_password_##]"
+                      value=""
+                      tt-onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]"
+                      className="border border-tcu-color-3/80 p-1"
+                    />
+                    <button
+                      type="button"
+                      className="submit bg-tcu-color-8 text-sm text-tcu-color-3/80 cursor-pointer px-2"
+                      value="submit"
+                      tt-onclick="[##_article_dissolve_##]"
+                    >
+                      확인
+                    </button>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </td>
       </tr>
