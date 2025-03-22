@@ -3,7 +3,7 @@ import "./mini-room.scss";
 
 export function MiniRoom() {
   return (
-    <div className="w-full block aspect-video bg-color-3/5 relative">
+    <div className="w-full block aspect-video bg-tcu-color-3/5 relative">
       <s_if_var_mini_room_img_url>
         <img
           src={Var["[##_var_mini_room_img_url_##]"]}

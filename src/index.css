@@ -1,1 +1,97 @@
 @import "tailwindcss";
+
+@custom-variant my-active (.my-active &, .my-active&);
+@custom-variant hocus (&:hover, &:focus);
+
+@custom-variant tt-body-index (#tt-body-index &, #tt-body-index&);
+@custom-variant tt-body-page (#tt-body-page &, #tt-body-page&);
+@custom-variant tt-body-category (#tt-body-category &, #tt-body-category&);
+@custom-variant tt-body-archive (#tt-body-archive &, #tt-body-archive&);
+@custom-variant tt-body-tag (#tt-body-tag &, #tt-body-tag&);
+@custom-variant tt-body-search (#tt-body-search &, #tt-body-search&);
+@custom-variant tt-body-guestbook (#tt-body-guestbook &, #tt-body-guestbook&);
+@custom-variant tt-body-location (#tt-body-location &, #tt-body-location&);
+@custom-variant tt-body-notice (#tt-body-notice &, #tt-body-notice&);
+@custom-variant tt-body-notice-page (#tt-body-notice-page &, #tt-body-notice-page&);
+@custom-variant tt-body-tag-index (#tt-body-tag-index &, #tt-body-tag-index&);
+
+@custom-variant today-is-not-bad (.today_is_not_bad &, .today_is_not_bad&);
+@custom-variant today-is-good (.today_is_good &, .today_is_good&);
+@custom-variant today-is-pleasure (.today_is_pleasure &, .today_is_pleasure&);
+@custom-variant today-is-happy (.today_is_happy &, .today_is_happy&);
+@custom-variant today-is-sad (.today_is_sad &, .today_is_sad&);
+@custom-variant today-is-soso (.today_is_soso &, .today_is_soso&);
+@custom-variant today-is-blue (.today_is_blue &, .today_is_blue&);
+@custom-variant today-is-angry (.today_is_angry &, .today_is_angry&);
+@custom-variant today-is-flutter (.today_is_flutter &, .today_is_flutter&);
+@custom-variant today-is-expect (.today_is_expect &, .today_is_expect&);
+@custom-variant today-is-annoying (.today_is_annoying &, .today_is_annoying&);
+@custom-variant today-is-bored (.today_is_bored &, .today_is_bored&);
+
+@custom-variant mini-room-display-flag-show (.mini_room_display_flag_show &, .mini_room_display_flag_show&);
+@custom-variant mini-room-display-flag-hide (.mini_room_display_flag_hide &, .mini_room_display_flag_hide&);
+
+@plugin "../tailwind.config.ts";
+
+@theme {
+  --color-tcu-color-1: rgb(78, 179, 209);
+  --color-tcu-color-2: rgb(255, 255, 255);
+  --color-tcu-color-3: rgb(0, 0, 0);
+  --color-tcu-color-4: rgb(236, 70, 8);
+  --color-tcu-color-5: rgb(229, 229, 227);
+  --color-tcu-color-6: rgb(245, 245, 245);
+  --color-tcu-color-7: rgb(35, 145, 172);
+  --color-tcu-color-8: rgb(200, 200, 200);
+  --color-tcu-color-9: rgb(252, 215, 47);
+}
+
+@utility tab-* {
+  tab-size: --value(--tab-size- *);
+  tab-size: --value([integer]);
+}
+
+html {
+  background-image: url("./images/tile.jpg");
+  background-repeat: repeat;
+  background-size: 30px 30px;
+}
+
+@layer {
+  #tag-list {
+    font-size: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    position: relative;
+    box-sizing: border-box;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 8px;
+
+      &::before {
+        content: "#";
+        display: inline=flex;
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+
+      &.my-active {
+        font-weight: bold;
+      }
+    }
+  }
+
+  #tt-body-page {
+    #tag-list {
+      a {
+        background-color: var(--color-tcu-color-3);
+      }
+    }
+  }
+}

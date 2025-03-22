@@ -43,22 +43,22 @@ export function CommentList(props: ICommnetList.Props) {
               >
                 <div className="w-full flex flex-wrap gap-3 relative box-border">
                   {/* top bar */}
-                  <div className="w-full flex items-center bg-color-3/10 justify-between gap-2 box-border px-3 py-2 text-xs border-t border-t-color-3/20">
+                  <div className="w-full flex items-center bg-tcu-color-3/10 justify-between gap-2 box-border px-3 py-2 text-xs border-t border-t-tcu-color-3/20">
                     <div className="inline-flex items-center flex-wrap gap-2">
-                      <div className="inline-flex font-bold text-color-3/70">
+                      <div className="inline-flex font-bold text-tcu-color-3/70">
                         {`[##_${prefix}_rep_name_##]`}
                       </div>
-                      <div className="inline-flex text-color-3/70 gap-1">
+                      <div className="inline-flex text-tcu-color-3/70 gap-1">
                         {`[##_${prefix}_rep_date_##]`}
                       </div>
                     </div>
 
-                    <div className="inline-flex items-center gap-2 relative flex-shrink-0 flex-grow-0 text-color-3/70">
+                    <div className="inline-flex items-center gap-2 relative flex-shrink-0 flex-grow-0 text-tcu-color-3/70">
                       <ul className="inline-flex flex-wrap gap-2 relative">
                         {!isGuestBook && (
                           <li
                             className={cn(
-                              "cursor-pointer text-xs text-color-3/60 hover:underline"
+                              "cursor-pointer text-xs text-tcu-color-3/60 hover:underline"
                             )}
                             data-link="[##_rp_rep_link_##]"
                             tt-onclick={`commentLinkCopyButtonClick(this);`}
@@ -69,7 +69,7 @@ export function CommentList(props: ICommnetList.Props) {
 
                         <li
                           className={cn(
-                            "cursor-pointer text-xs text-color-3/60 hover:underline"
+                            "cursor-pointer text-xs text-tcu-color-3/60 hover:underline"
                           )}
                           tt-onclick={`[##_${prefix}_rep_onclick_delete_##]`}
                         >
@@ -77,7 +77,7 @@ export function CommentList(props: ICommnetList.Props) {
                         </li>
                         <li
                           className={cn(
-                            "cursor-pointer text-xs text-color-3/60 hover:underline"
+                            "cursor-pointer text-xs text-tcu-color-3/60 hover:underline"
                           )}
                           tt-onclick={`[##_${prefix}_rep_onclick_reply_##]`}
                         >
@@ -104,17 +104,17 @@ export function CommentList(props: ICommnetList.Props) {
 
                 {/* reply rp list */}
                 <ReplyContainerComp>
-                  <ul className="w-full flex flex-wrap relative py-1.5 bg-color-3/5">
+                  <ul className="w-full flex flex-wrap relative py-1.5 bg-tcu-color-3/5">
                     <ReplyRepComp>
                       <li className="px-3 py-1.5 box-border relative w-full text-xs block">
                         <span
-                          className="text-color-1 inline gap-1 relative"
+                          className="text-tcu-color-1 inline gap-1 relative"
                           data-title="reply-rp-profile-name"
                         >
                           {`[##_${prefix}_rep_name_##]`}:&nbsp;
                         </span>
                         <span className="inline">{`[##_${prefix}_rep_desc_##]`}</span>
-                        <span className="inline text-color-3/40">
+                        <span className="inline text-tcu-color-3/40">
                           &nbsp;({`[##_${prefix}_rep_date_##]`})
                         </span>
                         <span>&nbsp;&nbsp;</span>
@@ -122,7 +122,7 @@ export function CommentList(props: ICommnetList.Props) {
                           {!isGuestBook && (
                             <li
                               className={cn(
-                                "cursor-pointer text-xs text-color-3/40 hover:underline inline"
+                                "cursor-pointer text-xs text-tcu-color-3/40 hover:underline inline"
                               )}
                               data-link="[##_rp_rep_link_##]"
                               tt-onclick={`commentLinkCopyButtonClick(this);`}
@@ -133,7 +133,7 @@ export function CommentList(props: ICommnetList.Props) {
 
                           <li
                             className={cn(
-                              "cursor-pointer text-xs text-color-3/40 hover:underline inline"
+                              "cursor-pointer text-xs text-tcu-color-3/40 hover:underline inline"
                             )}
                             tt-onclick={`[##_${prefix}_rep_onclick_delete_##]`}
                           >
@@ -141,7 +141,7 @@ export function CommentList(props: ICommnetList.Props) {
                           </li>
                           <li
                             className={cn(
-                              "cursor-pointer text-xs text-color-3/40 hover:underline inline"
+                              "cursor-pointer text-xs text-tcu-color-3/40 hover:underline inline"
                             )}
                             tt-onclick={`[##_${prefix}_rep_onclick_reply_##]`}
                           >
@@ -155,7 +155,7 @@ export function CommentList(props: ICommnetList.Props) {
               </li>
             </RepComp>
           </ul>
-          <div className="w-full flex box-border text-xs other-has-[li]/rp-list:hidden text-color-3/40">
+          <div className="w-full flex box-border text-xs other-has-[li]/rp-list:hidden text-tcu-color-3/40">
             작성된 {title}이 없습니다.
           </div>
         </ContainerComp>

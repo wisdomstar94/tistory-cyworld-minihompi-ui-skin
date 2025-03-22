@@ -15,7 +15,7 @@ export function Pagination() {
             tt-onlyattr="[##_prev_page_##]"
             className={cn("[##_no_more_prev_##]", "rounded-md p-1 inline-flex")}
           >
-            <span className="text-xs text-color-3/70">{"<"}</span>
+            <span className="text-xs text-tcu-color-3/70">{"<"}</span>
           </a>
           <div
             className="numbox inline-flex flex-wrap gap-0.5 items-center relative"
@@ -34,7 +34,7 @@ export function Pagination() {
             tt-onlyattr="[##_next_page_##]"
             className={cn("[##_no_more_next_##]", "rounded-md p-1 inline-flex")}
           >
-            <span className="text-xs text-color-3/70">{">"}</span>
+            <span className="text-xs text-tcu-color-3/70">{">"}</span>
           </a>
         </div>
       </s_paging>

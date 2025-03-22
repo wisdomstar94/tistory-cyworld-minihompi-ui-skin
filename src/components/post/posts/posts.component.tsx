@@ -16,7 +16,7 @@ export function Posts() {
       >
         <thead
           className={cn(
-            "border-t border-t-color-3/30 border-b border-b-color-3/15",
+            "border-t border-t-tcu-color-3/30 border-b border-b-tcu-color-3/15",
             "hidden",
             "tt-body-category:table-header-group tt-body-search:table-header-group tt-body-notice:table-header-group tt-body-tag-index:table-header-group"
           )}
@@ -30,7 +30,7 @@ export function Posts() {
         </thead>
         <tbody
           className={cn(
-            "before:w-full before:h-[3px] before:block border-b border-b-color-3/15 after:h-[3px] after:block relative",
+            "before:w-full before:h-[3px] before:block border-b border-b-tcu-color-3/15 after:h-[3px] after:block relative",
             "border-b-0",
             "tt-body-category:border-b tt-body-notice:border-b tt-body-tag-index:border-b",
             "tt-body-page:block tt-body-notice-page:block"
@@ -64,7 +64,7 @@ export function Posts() {
           </s_article_protected>
 
           <tr className="other-exist-[post-tr-item]:hidden">
-            <td colSpan={4} className="text-xs text-color-3/40 text-center">
+            <td colSpan={4} className="text-xs text-tcu-color-3/40 text-center">
               조회된 결과가 없습니다.
             </td>
           </tr>
@@ -73,7 +73,7 @@ export function Posts() {
       <div className="w-full flex justify-end items-center relative">
         <a
           className={cn(
-            "px-1 py-0.5 cursor-pointer border border-color-3/30 rounded text-color-3/50 text-xs",
+            "px-1 py-0.5 cursor-pointer border border-tcu-color-3/30 rounded text-tcu-color-3/50 text-xs",
             "hidden tt-body-category:inline-flex tt-body-search:inline-flex"
           )}
           href="/manage/post"
@@ -82,7 +82,7 @@ export function Posts() {
         </a>
         <a
           className={cn(
-            "px-1 py-0.5 cursor-pointer border border-color-3/30 rounded text-color-3/50 text-xs",
+            "px-1 py-0.5 cursor-pointer border border-tcu-color-3/30 rounded text-tcu-color-3/50 text-xs",
             "hidden tt-body-notice:inline-flex"
           )}
           href="/manage/notice"

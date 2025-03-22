@@ -22,8 +22,8 @@ export function MainContainer() {
             className="w-full h-full absolute top-0 left-0 z-[-1]"
           >
             <div className="w-full h-full relative flex">
-              <div className="w-[270px] flex-shrink-0 flex-grow-0 bg-color-1 rounded-xl"></div>
-              <div className="min-w-0 w-full bg-color-1 rounded-xl ml-[-1px]"></div>
+              <div className="w-[270px] flex-shrink-0 flex-grow-0 bg-tcu-color-1 rounded-xl"></div>
+              <div className="min-w-0 w-full bg-tcu-color-1 rounded-xl ml-[-1px]"></div>
             </div>
           </div>
 
@@ -34,13 +34,13 @@ export function MainContainer() {
           >
             <div className="w-full h-full box-border p-6">
               <div
-                // className="w-full h-full border border-dashed border-color-2 rounded-xl"
+                // className="w-full h-full border border-dashed border-tcu-color-2 rounded-xl"
                 className="w-full h-full rounded-xl flex"
               >
                 {/* left */}
-                <div className="w-[246px] flex-shrink-0 flex-grow-0 h-full border-l border-t border-b border-dashed border-color-2 rounded-xl"></div>
+                <div className="w-[246px] flex-shrink-0 flex-grow-0 h-full border-l border-t border-b border-dashed border-tcu-color-2 rounded-xl"></div>
                 {/* right */}
-                <div className="w-full h-full border-r border-t border-b border-dashed border-color-2 rounded-xl"></div>
+                <div className="w-full h-full border-r border-t border-b border-dashed border-tcu-color-2 rounded-xl"></div>
               </div>
             </div>
           </div>
@@ -51,9 +51,9 @@ export function MainContainer() {
             className="w-full h-full absolute top-0 left-0 z-[-1]"
           >
             <div className="w-full h-full relative flex box-border p-8">
-              <div className="w-[238px] flex-shrink-0 flex-grow-0 bg-color-2 rounded-xl"></div>
-              <div className="min-w-0 w-full bg-color-2 rounded-xl relative">
-                <div className="w-full h-full bg-color-3/5" />
+              <div className="w-[238px] flex-shrink-0 flex-grow-0 bg-tcu-color-2 rounded-xl"></div>
+              <div className="min-w-0 w-full bg-tcu-color-2 rounded-xl relative">
+                <div className="w-full h-full bg-tcu-color-3/5" />
               </div>
             </div>
           </div>
@@ -64,20 +64,20 @@ export function MainContainer() {
             className="w-[1px] h-[314px] absolute top-[112px] left-[270px] z-[1] flex flex-col justify-between"
           >
             <div className="flex flex-col gap-10 relative items-center w-full">
-              <div className="w-[38px] h-[12px] bg-color-6 border flex-shrink-0 flex-grow-0 border-color-3/30 rounded-3xl overflow-hidden relative">
-                <div className="w-[40%] h-full bg-color-3/15"></div>
+              <div className="w-[38px] h-[12px] bg-tcu-color-6 border flex-shrink-0 flex-grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
+                <div className="w-[40%] h-full bg-tcu-color-3/15"></div>
               </div>
-              <div className="w-[38px] h-[12px] bg-color-6 border flex-shrink-0 flex-grow-0 border-color-3/30 rounded-3xl overflow-hidden relative">
-                <div className="w-[40%] h-full bg-color-3/15"></div>
+              <div className="w-[38px] h-[12px] bg-tcu-color-6 border flex-shrink-0 flex-grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
+                <div className="w-[40%] h-full bg-tcu-color-3/15"></div>
               </div>
             </div>
 
             <div className="flex flex-col gap-10 relative items-center w-full">
-              <div className="w-[38px] h-[12px] bg-color-6 border flex-shrink-0 flex-grow-0 border-color-3/30 rounded-3xl overflow-hidden relative">
-                <div className="w-[40%] h-full bg-color-3/15"></div>
+              <div className="w-[38px] h-[12px] bg-tcu-color-6 border flex-shrink-0 flex-grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
+                <div className="w-[40%] h-full bg-tcu-color-3/15"></div>
               </div>
-              <div className="w-[38px] h-[12px] bg-color-6 border flex-shrink-0 flex-grow-0 border-color-3/30 rounded-3xl overflow-hidden relative">
-                <div className="w-[40%] h-full bg-color-3/15"></div>
+              <div className="w-[38px] h-[12px] bg-tcu-color-6 border flex-shrink-0 flex-grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
+                <div className="w-[40%] h-full bg-tcu-color-3/15"></div>
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ export function MainContainer() {
                         <div className="flex items-center gap-5 scale-y-[0.9]">
                           <div className="inline-flex gap-2 relative">
                             <label className="tracking-tighter">TODAY</label>
-                            <div className="font-bold tracking-tighter text-color-4">
+                            <div className="font-bold tracking-tighter text-tcu-color-4">
                               [##_count_today_##]
                             </div>
                           </div>
@@ -126,13 +126,13 @@ export function MainContainer() {
 
                 {/* 2 */}
                 <div className="min-w-0 min-h-0 relative flex items-end gap-2 justify-between">
-                  <div className="inline-block pl-2 font-bold text-lg leading-5 text-color-1 overflow-hidden whitespace-nowrap overflow-ellipsis">
+                  <div className="inline-block pl-2 font-bold text-lg leading-5 text-tcu-color-1 overflow-hidden whitespace-nowrap overflow-ellipsis">
                     [##_title_##]
                   </div>
                   <div className="flex-shrink-0 flex-grow-0">
                     <a
                       href="/manage"
-                      className="inline-flex text-xs text-color-3/50 hover:underline"
+                      className="inline-flex text-xs text-tcu-color-3/50 hover:underline"
                     >
                       블로그 관리
                     </a>
@@ -142,9 +142,9 @@ export function MainContainer() {
 
                 {/* 3 */}
                 <div className="min-w-0 min-h-0">
-                  <div className="w-full h-full box-border px-1.5 py-2.5 border border-color-3/30 bg-color-3/10 rounded-xl">
+                  <div className="w-full h-full box-border px-1.5 py-2.5 border border-tcu-color-3/30 bg-tcu-color-3/10 rounded-xl">
                     {/* scroll container */}
-                    <div className="w-full h-full bg-color-2 rounded-lg box-border py-1.5 px-2.5 overflow-y-auto flex flex-col gap-1.5 items-start content-start">
+                    <div className="w-full h-full bg-tcu-color-2 rounded-lg box-border py-1.5 px-2.5 overflow-y-auto flex flex-col gap-1.5 items-start content-start">
                       {/* 카테고리 목록 */}
                       <s_sidebar>
                         <tt_html_comment>카테고리 목록</tt_html_comment>
@@ -176,7 +176,7 @@ export function MainContainer() {
                           </tt_html_comment>
                           <div
                             className={cn(
-                              "w-full h-[120px] flex-shrink-0 flex-grow-0 relative border box-border border-color-3/10 rounded-sm overflow-hidden",
+                              "w-full h-[120px] flex-shrink-0 flex-grow-0 relative border box-border border-tcu-color-3/10 rounded-sm overflow-hidden",
                               "hidden tt-body-index:flex tt-body-guestbook:flex"
                             )}
                           >
@@ -194,7 +194,7 @@ export function MainContainer() {
 
                       <div
                         className={cn(
-                          "w-full h-[1px] flex-shrink-0 flex-grow-0 bg-color-3/10",
+                          "w-full h-[1px] flex-shrink-0 flex-grow-0 bg-tcu-color-3/10",
                           "hidden tt-body-index:flex tt-body-guestbook:flex"
                         )}
                       />
@@ -202,12 +202,12 @@ export function MainContainer() {
                       {/* TODAY IS ... */}
                       <div
                         className={cn(
-                          "w-full border box-border border-color-3/10 rounded-sm p-1 text-sm flex-shrink-0 flex-grow-0 justify-center items-center",
+                          "w-full border box-border border-tcu-color-3/10 rounded-sm p-1 text-sm flex-shrink-0 flex-grow-0 justify-center items-center",
                           "hidden tt-body-index:flex tt-body-guestbook:flex"
                         )}
                       >
                         <div className="inline-flex gap-2">
-                          <label className="text-color-1 font-bold">
+                          <label className="text-tcu-color-1 font-bold">
                             TODAY IS ..
                           </label>
                           <div
@@ -284,7 +284,7 @@ export function MainContainer() {
                         )}
                       >
                         <TitleBar>Profile Name</TitleBar>
-                        <div className="w-full text-xs block whitespace-nowrap overflow-hidden overflow-ellipsis text-color-1 font-medium">
+                        <div className="w-full text-xs block whitespace-nowrap overflow-hidden overflow-ellipsis text-tcu-color-1 font-medium">
                           [##_blogger_##]
                         </div>
                       </div>
@@ -316,7 +316,7 @@ export function MainContainer() {
                                   <li className="w-full block relative">
                                     <a
                                       href="[##_rctrp_rep_link_##]"
-                                      className="w-full flex gap-1 relative group/recent-comment-item hover:text-color-1"
+                                      className="w-full flex gap-1 relative group/recent-comment-item hover:text-tcu-color-1"
                                       title="작성자: [##_rctrp_rep_name_##]"
                                     >
                                       <div className="min-w-0 w-full relative block items-center group-hover/recent-comment-item:underline overflow-ellipsis whitespace-nowrap overflow-hidden">
@@ -341,7 +341,7 @@ export function MainContainer() {
 
                 {/* 4 */}
                 <div className="min-w-0 min-h-0 relative style-observer-target">
-                  <div className="w-full h-full box-border pl-5 pr-3 py-2.5 border border-color-8 bg-color-2 rounded-xl style-observer-target">
+                  <div className="w-full h-full box-border pl-5 pr-3 py-2.5 border border-tcu-color-8 bg-tcu-color-2 rounded-xl style-observer-target">
                     {/* scroll container */}
                     <div className="w-full h-full overflow-y-auto relative flex flex-wrap gap-2 content-start items-start style-observer-target">
                       {/* top */}
@@ -382,7 +382,7 @@ export function MainContainer() {
                                     </li>
                                   </s_rctps_rep>
                                 </ul>
-                                <div className="block other-has-[li]/recent-post-list:hidden text-xs text-color-3/50">
+                                <div className="block other-has-[li]/recent-post-list:hidden text-xs text-tcu-color-3/50">
                                   등록된 글이 없습니다.
                                 </div>
                               </div>
@@ -431,7 +431,7 @@ export function MainContainer() {
                         <li className="w-full flex relative">
                           <NavButton
                             id="nav-home-button"
-                            className="tt-body-index:bg-color-2 tt-body-index:text-color-1"
+                            className="tt-body-index:bg-tcu-color-2 tt-body-index:text-tcu-color-1"
                             href="/"
                           >
                             홈
@@ -444,9 +444,9 @@ export function MainContainer() {
                           <NavButton
                             id="nav-category-button"
                             className={cn(
-                              "tt-body-category:bg-color-2 tt-body-category:text-color-1",
-                              "tt-body-page:bg-color-2 tt-body-page:text-color-1",
-                              "tt-body-search:bg-color-2 tt-body-search:text-color-1"
+                              "tt-body-category:bg-tcu-color-2 tt-body-category:text-tcu-color-1",
+                              "tt-body-page:bg-tcu-color-2 tt-body-page:text-tcu-color-1",
+                              "tt-body-search:bg-tcu-color-2 tt-body-search:text-tcu-color-1"
                             )}
                             href="/category"
                           >
@@ -460,8 +460,8 @@ export function MainContainer() {
                           <NavButton
                             id="nav-notice-button"
                             className={cn(
-                              "tt-body-notice:bg-color-2 tt-body-notice:text-color-1",
-                              "tt-body-notice-page:bg-color-2 tt-body-notice-page:text-color-1"
+                              "tt-body-notice:bg-tcu-color-2 tt-body-notice:text-tcu-color-1",
+                              "tt-body-notice-page:bg-tcu-color-2 tt-body-notice-page:text-tcu-color-1"
                             )}
                             href="/notice"
                           >
@@ -475,8 +475,8 @@ export function MainContainer() {
                           <NavButton
                             id="nav-notice-button"
                             className={cn(
-                              "tt-body-tag:bg-color-2 tt-body-tag:text-color-1",
-                              "tt-body-tag-index:bg-color-2 tt-body-tag-index:text-color-1"
+                              "tt-body-tag:bg-tcu-color-2 tt-body-tag:text-tcu-color-1",
+                              "tt-body-tag-index:bg-tcu-color-2 tt-body-tag-index:text-tcu-color-1"
                             )}
                             href="/tag"
                           >
@@ -489,7 +489,7 @@ export function MainContainer() {
                         <li className="w-full flex relative">
                           <NavButton
                             id="nav-guestbook-button"
-                            className="tt-body-guestbook:bg-color-2 tt-body-guestbook:text-color-1"
+                            className="tt-body-guestbook:bg-tcu-color-2 tt-body-guestbook:text-tcu-color-1"
                             href="/guestbook"
                           >
                             방명록

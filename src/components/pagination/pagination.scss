@@ -3,10 +3,13 @@
     font-size: 0;
 
     > span {
-      @apply text-xs text-color-3/70 px-2;
+      font-size: 12px;
+      color: color-mix(in hsl, var(--color-tcu-color-3) 70%, transparent);
+      padding: 0 8px;
 
       &.selected {
-        @apply font-bold text-color-3;
+        font-weight: bold;
+        color: var(--color-tcu-color-3);
       }
     }
   }

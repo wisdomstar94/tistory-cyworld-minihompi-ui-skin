@@ -21,13 +21,13 @@ export function CategoryListBox() {
             <input
               type="text"
               placeholder="글 제목, 글 내용 등을 검색"
-              className="w-full flex px-2 py-1 text-xs placeholder:text-color-3/40 box-border border border-color-3/20"
+              className="w-full flex px-2 py-1 text-xs placeholder:text-tcu-color-3/40 box-border border border-tcu-color-3/20"
               name="[##_search_name_##]"
               tt-value="[##_search_text_##]"
               tt-onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"
             />
             <button
-              className="w-[40px] flex-shrink-0 flex-grow-0 text-xs flex items-center justify-center cursor-pointer bg-color-3/20"
+              className="w-[40px] flex-shrink-0 flex-grow-0 text-xs flex items-center justify-center cursor-pointer bg-tcu-color-3/20"
               tt-onclick="[##_search_onclick_submit_##]"
             >
               검색
@@ -36,7 +36,7 @@ export function CategoryListBox() {
         </s_search>
         <div className="w-full" />
         [##_category_list_##]
-        <div className="w-full h-[1px] bg-color-3/20" />
+        <div className="w-full h-[1px] bg-tcu-color-3/20" />
         <a href="/notice" id="category-list-notice-menu">
           공지사항
         </a>

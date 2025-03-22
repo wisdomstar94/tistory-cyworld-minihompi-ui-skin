@@ -38,8 +38,8 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
                   className={cn(
                     "max-w-[80px]",
                     "bg-transparent focus:outline-none",
-                    "placeholder:text-color-3/50",
-                    "border border-color-3/20 box-border",
+                    "placeholder:text-tcu-color-3/50",
+                    "border border-tcu-color-3/20 box-border",
                     "px-2 py-0.5 text-xs"
                   )}
                   name={`[##_${prefix}_input_name_##]`}
@@ -54,8 +54,8 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
                   className={cn(
                     "max-w-[80px]",
                     "bg-transparent focus:outline-none",
-                    "placeholder:text-color-3/50",
-                    "border border-color-3/20 box-border",
+                    "placeholder:text-tcu-color-3/50",
+                    "border border-tcu-color-3/20 box-border",
                     "px-2 py-0.5 text-xs"
                   )}
                   maxLength={8}
@@ -75,7 +75,7 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
                 data-title="secret-checkbox"
                 id={`[##_rp_input_is_secret_##]`}
                 name={`[##_rp_input_is_secret_##]`}
-                className="w-[16px] h-[16px] bg-transparent border border-color-3/60 other/secret-checkbox text-xs"
+                className="w-[16px] h-[16px] bg-transparent border border-tcu-color-3/60 other/secret-checkbox text-xs"
               />
             </li>
           </ul>
@@ -89,10 +89,10 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
               className={cn(
                 "w-full h-[80px]",
                 "focus:outline-none",
-                "placeholder:text-color-3/50",
+                "placeholder:text-tcu-color-3/50",
                 "resize-none",
                 "bg-transparent",
-                "border border-color-3/20 box-border",
+                "border border-tcu-color-3/20 box-border",
                 "p-2",
                 "text-xs"
               )}
@@ -102,7 +102,7 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
           <div className="w-[80px] flex items-stretch relative flex-shrink-0 flex-grow-0">
             <button
               tt-onclick={`[##_${prefix}_onclick_submit_##]`}
-              className="w-full h-full flex items-center justify-center p-2 box-border text-xs bg-color-3/10 cursor-pointer"
+              className="w-full h-full flex items-center justify-center p-2 box-border text-xs bg-tcu-color-3/10 cursor-pointer"
             >
               {title} 작성
             </button>

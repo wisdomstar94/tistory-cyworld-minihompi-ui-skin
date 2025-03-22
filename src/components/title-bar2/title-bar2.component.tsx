@@ -8,7 +8,7 @@ export function TitleBar2(props: ITitleBar2.Props) {
       <div className="w-full relative flex flex-wrap">
         <div
           data-title="custom-title-bar2-text-area"
-          className="w-full border-b border-b-color-3/10 flex items-center relative gap-2 text-xs text-color-1 font-bold box-border"
+          className="w-full border-b border-b-tcu-color-3/10 flex items-center relative gap-2 text-xs text-tcu-color-1 font-bold box-border"
         >
           {children}
         </div>
