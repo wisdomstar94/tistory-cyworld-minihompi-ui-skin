@@ -42,6 +42,14 @@
 @custom-variant home-posts-display-type-gallery-col-count-4 (.home_posts_display_type_gallery_col_count_4 &, .home_posts_display_type_gallery_col_count_4&);
 @custom-variant home-posts-display-type-gallery-col-count-5 (.home_posts_display_type_gallery_col_count_5 &, .home_posts_display_type_gallery_col_count_5&);
 
+@custom-variant board-posts-display-type-row (.board_posts_display_type_row &, .board_posts_display_type_row&);
+@custom-variant board-posts-display-type-gallery (.board_posts_display_type_gallery &, .board_posts_display_type_gallery&);
+
+@custom-variant board-posts-display-type-gallery-col-count-2 (.board_posts_display_type_gallery_col_count_2 &, .board_posts_display_type_gallery_col_count_2&);
+@custom-variant board-posts-display-type-gallery-col-count-3 (.board_posts_display_type_gallery_col_count_3 &, .board_posts_display_type_gallery_col_count_3&);
+@custom-variant board-posts-display-type-gallery-col-count-4 (.board_posts_display_type_gallery_col_count_4 &, .board_posts_display_type_gallery_col_count_4&);
+@custom-variant board-posts-display-type-gallery-col-count-5 (.board_posts_display_type_gallery_col_count_5 &, .board_posts_display_type_gallery_col_count_5&);
+
 @plugin "../tailwind.config.ts";
 
 @theme {

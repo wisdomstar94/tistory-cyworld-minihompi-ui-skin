@@ -217,7 +217,7 @@
             {"name":"home_posts_display_type_gallery", "label":"갤러리", "value":"home_posts_display_type_gallery"}
           ]
         ]]></option>
-        <default>comment_profile_icon_url_flag_off</default>
+        <default>home_posts_display_type_row</default>
       </variable>
       <variable>
         <name>home_posts_display_type_gallery_col_count</name>
@@ -235,6 +235,40 @@
           ]
         ]]></option>
         <default>home_posts_display_type_gallery_col_count_5</default>
+      </variable>
+    </variablegroup>
+    <variablegroup name="게시판 화면 설정">
+      <variable>
+        <name>board_posts_display_type</name>
+        <label>
+          <![CDATA[ 게시판 화면 게시글 표시 방식 ]]>
+        </label>
+        <description>게시판 화면 게시글 표시 방식</description>
+        <type>SELECT</type>
+        <option><![CDATA[
+          [
+            {"name":"board_posts_display_type_row", "label":"일반", "value":"board_posts_display_type_row"},
+            {"name":"board_posts_display_type_gallery", "label":"갤러리", "value":"board_posts_display_type_gallery"}
+          ]
+        ]]></option>
+        <default>board_posts_display_type_row</default>
+      </variable>
+      <variable>
+        <name>board_posts_display_type_gallery_col_count</name>
+        <label>
+          <![CDATA[ 게시판 화면 게시글 갤러리일 경우 컬럼 갯수 ]]>
+        </label>
+        <description>게시판 화면 게시글 갤러리일 경우 컬럼 갯수</description>
+        <type>SELECT</type>
+        <option><![CDATA[
+          [
+            {"name":"board_posts_display_type_gallery_col_count_2", "label":"2개", "value":"board_posts_display_type_gallery_col_count_2"},
+            {"name":"board_posts_display_type_gallery_col_count_3", "label":"3개", "value":"board_posts_display_type_gallery_col_count_3"},
+            {"name":"board_posts_display_type_gallery_col_count_4", "label":"4개", "value":"board_posts_display_type_gallery_col_count_4"},
+            {"name":"board_posts_display_type_gallery_col_count_5", "label":"5개", "value":"board_posts_display_type_gallery_col_count_5"}
+          ]
+        ]]></option>
+        <default>board_posts_display_type_gallery_col_count_2</default>
       </variable>
     </variablegroup>
   </variables>

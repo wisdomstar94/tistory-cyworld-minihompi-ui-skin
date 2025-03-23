@@ -27,7 +27,7 @@ export function RecentPostItem() {
             "hidden home-posts-display-type-gallery:block"
           )}
         >
-          <s_article_rep_thumbnail>
+          <s_rctps_rep_thumbnail>
             <img
               className={cn(
                 "other/recent-post-thumnail-img",
@@ -35,7 +35,7 @@ export function RecentPostItem() {
               )}
               src="[##_article_rep_thumbnail_url_##]"
             />
-          </s_article_rep_thumbnail>
+          </s_rctps_rep_thumbnail>
           <div
             className={cn(
               "other-exist-[recent-post-thumnail-img]:hidden",

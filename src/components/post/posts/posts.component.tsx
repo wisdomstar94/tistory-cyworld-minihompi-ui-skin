@@ -10,15 +10,18 @@ export function Posts() {
         className={cn(
           "w-full relative text-xs",
           "hidden tt-body-page:block tt-body-notice-page:block",
-          "tt-body-category:table tt-body-search:table tt-body-notice:table tt-body-tag-index:table"
+          "tt-body-category:table tt-body-search:table tt-body-notice:table tt-body-tag-index:table",
           //
+          "tt-body-category:board-posts-display-type-gallery:flex tt-body-category:board-posts-display-type-gallery:flex-col gap-2"
         )}
       >
         <thead
           className={cn(
             "border-t border-t-tcu-color-3/30 border-b border-b-tcu-color-3/15",
             "hidden",
-            "tt-body-category:table-header-group tt-body-search:table-header-group tt-body-notice:table-header-group tt-body-tag-index:table-header-group"
+            "tt-body-category:table-header-group tt-body-search:table-header-group tt-body-notice:table-header-group tt-body-tag-index:table-header-group",
+
+            "tt-body-category:board-posts-display-type-gallery:hidden"
           )}
         >
           <tr>
@@ -33,7 +36,15 @@ export function Posts() {
             "before:w-full before:h-[3px] before:block border-b border-b-tcu-color-3/15 after:h-[3px] after:block relative",
             "border-b-0",
             "tt-body-category:border-b tt-body-notice:border-b tt-body-tag-index:border-b",
-            "tt-body-page:block tt-body-notice-page:block"
+            "tt-body-page:block tt-body-notice-page:block",
+
+            "tt-body-category:board-posts-display-type-gallery:grid gap-2",
+            "tt-body-category:board-posts-display-type-gallery:border-b-0",
+            "tt-body-category:board-posts-display-type-gallery:before:hidden",
+            "tt-body-category:board-posts-display-type-gallery:board-posts-display-type-gallery-col-count-2:grid-cols-2",
+            "tt-body-category:board-posts-display-type-gallery:board-posts-display-type-gallery-col-count-3:grid-cols-3",
+            "tt-body-category:board-posts-display-type-gallery:board-posts-display-type-gallery-col-count-4:grid-cols-4",
+            "tt-body-category:board-posts-display-type-gallery:board-posts-display-type-gallery-col-count-5:grid-cols-5"
           )}
         >
           <s_article_rep>
