@@ -25,6 +25,10 @@ declare namespace React.JSX {
 		's_not_var_comment_profile_icon_url_flag': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
 		's_if_var_comment_profile_icon_url': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
 		's_not_var_comment_profile_icon_url': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_if_var_home_posts_display_type': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_not_var_home_posts_display_type': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_if_var_home_posts_display_type_gallery_col_count': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+		's_not_var_home_posts_display_type_gallery_col_count': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
 		
   }
 }

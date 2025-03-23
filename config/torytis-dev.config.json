@@ -264,6 +264,7 @@
   },
   "skin_setting_variables": {
     "total_list_max_col_count": "total_list_max_col_count_4",
+    "home_posts_display_type": "home_posts_display_type_gallery",
     "blog_screen_max_width": "1660"
   }
 }

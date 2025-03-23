@@ -10,6 +10,7 @@ import { TitleBar } from "@/components/title-bar/title-bar.component";
 import { TitleBar2 } from "@/components/title-bar2/title-bar2.component";
 import { Var } from "@/consts/torytis-variable-object";
 import { cn } from "@/utils/cn";
+import { RecentPostItem } from "./_components";
 
 export function MainContainer() {
   return (
@@ -360,25 +361,19 @@ export function MainContainer() {
                             <div className="min-w-0 min-h-0 relative flex-1 flex flex-wrap gap-1">
                               <TitleBar2>최근 게시물</TitleBar2>
                               <div className="w-full relative">
-                                <ul className="w-full flex flex-wrap gap-1 relative other/recent-post-list">
+                                <ul
+                                  className={cn(
+                                    "w-full flex-wrap gap-1 relative other/recent-post-list",
+                                    "flex home-posts-display-type-gallery:grid",
+                                    "home-posts-display-type-gallery:home-posts-display-type-gallery-col-count-2:grid-cols-2",
+                                    "home-posts-display-type-gallery:home-posts-display-type-gallery-col-count-3:grid-cols-3",
+                                    "home-posts-display-type-gallery:home-posts-display-type-gallery-col-count-4:grid-cols-4",
+                                    "home-posts-display-type-gallery:home-posts-display-type-gallery-col-count-5:grid-cols-5"
+                                  )}
+                                >
                                   <s_rctps_rep>
                                     <li className="w-full block relative">
-                                      <a
-                                        href="[##_rctps_rep_link_##]"
-                                        className="w-full flex items-center gap-1 text-xs group/rctps-rep-a"
-                                      >
-                                        <span className="inline-flex items-center flex-shrink-0 flex-grow-0">
-                                          ·
-                                        </span>
-                                        <div className="w-full flex items-center relative min-w-0 group-hover/rctps-rep-a:underline">
-                                          <div className="w-full block overflow-hidden overflow-ellipsis whitespace-nowrap">
-                                            [##_rctps_rep_title_##]
-                                          </div>
-                                        </div>
-                                        <div className="w-[70px] flex items-center justify-end flex-shrink-0 flex-grow-0 group-hover/rctps-rep-a:underline tabular-nums">
-                                          [##_rctps_rep_simple_date_##]
-                                        </div>
-                                      </a>
+                                      <RecentPostItem />
                                     </li>
                                   </s_rctps_rep>
                                 </ul>

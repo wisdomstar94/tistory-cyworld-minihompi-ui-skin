@@ -69,7 +69,9 @@ export default function App() {
         id="[##_body_id_##]"
         className={cn(
           "style-observer-target",
-          Var["[##_var_comment_profile_icon_url_flag_##]"]
+          Var["[##_var_comment_profile_icon_url_flag_##]"],
+          Var["[##_var_home_posts_display_type_##]"],
+          Var["[##_var_home_posts_display_type_gallery_col_count_##]"]
         )}
         style={{ backgroundSize: "" }}
       >

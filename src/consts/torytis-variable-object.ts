@@ -13,4 +13,6 @@ export const Var = {
 	"[##_var_bg_image_fit_type_##]": "[##_var_bg_image_fit_type_##]",
 	"[##_var_comment_profile_icon_url_flag_##]": "[##_var_comment_profile_icon_url_flag_##]",
 	"[##_var_comment_profile_icon_url_##]": "[##_var_comment_profile_icon_url_##]",
+	"[##_var_home_posts_display_type_##]": "[##_var_home_posts_display_type_##]",
+	"[##_var_home_posts_display_type_gallery_col_count_##]": "[##_var_home_posts_display_type_gallery_col_count_##]",
 };
