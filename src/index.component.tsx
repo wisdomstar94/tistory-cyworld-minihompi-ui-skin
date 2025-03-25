@@ -26,7 +26,7 @@ export default function App() {
           <Style
             html={`
               body {
-                --tcu-color-1: ${Var["[##_var_primary_color_##]"]};
+                --color-tcu-color-1: ${Var["[##_var_primary_color_##]"]};
               }
             `}
           />
@@ -35,7 +35,7 @@ export default function App() {
           <Style
             html={`
               body {
-                --tcu-color-7: ${Var["[##_var_primary_strong_color_##]"]};
+                --color-tcu-color-7: ${Var["[##_var_primary_strong_color_##]"]};
               }
             `}
           />
