@@ -20,6 +20,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@wisdomstar94/torytis": "^1.5.10",
+    "@wisdomstar94/torytis-utils": "^0",
     "autoprefixer": "^10.4.21",
     "clsx": "^2.1.1",
     "concurrently": "^9.1.2",

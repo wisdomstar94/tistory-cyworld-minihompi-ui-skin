@@ -62,6 +62,7 @@
   --color-tcu-color-7: rgb(35, 145, 172);
   --color-tcu-color-8: rgb(200, 200, 200);
   --color-tcu-color-9: rgb(252, 215, 47);
+  --color-tcu-color-10: rgb(120, 120, 120);
 }
 
 @utility tab-* {

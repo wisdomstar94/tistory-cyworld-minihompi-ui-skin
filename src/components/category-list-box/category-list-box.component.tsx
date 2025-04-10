@@ -1,7 +1,7 @@
 import { cn } from "@/utils/cn";
 import { Script } from "../script/script.component";
 import { TitleBar2 } from "../title-bar2/title-bar2.component";
-import "./category-list-box.scss";
+import "./category-list-box.css";
 
 export function CategoryListBox() {
   return (
@@ -44,6 +44,7 @@ export function CategoryListBox() {
       <Script
         html={`
           checkCategoryPageUrl();
+          initCategoryAItemFolderArea();
         `}
       />
     </>

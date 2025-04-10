@@ -205,3 +205,36 @@
     font-weight: bold;
   }
 }
+
+ul.category_list {
+  li {
+    .category-a-folder {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > svg {
+        stroke: var(--color-tcu-color-10);
+        display: none;
+      }
+    }
+
+    &.sub-category-list-collapse {
+      .category-a-folder {
+        > svg {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.sub-category-list-collapse ul.sub_category_list {
+  display: none !important;
+}

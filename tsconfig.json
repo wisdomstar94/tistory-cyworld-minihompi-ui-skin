@@ -4,7 +4,11 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "strict": true,
+    "types": ["@wisdomstar94/torytis-utils"],
     "paths": {
       "@/*": ["./src/*"]
     }
