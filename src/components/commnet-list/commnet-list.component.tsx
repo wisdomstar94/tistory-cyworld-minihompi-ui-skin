@@ -46,7 +46,7 @@ export function CommentList(props: ICommnetList.Props) {
                   {/* top bar */}
                   <div className="w-full flex items-center bg-tcu-color-3/10 justify-between gap-2 box-border px-3 py-2 text-xs border-t border-t-tcu-color-3/20">
                     <div className="inline-flex items-center flex-wrap gap-2">
-                      <div className="inline-flex font-bold text-tcu-color-3/70">
+                      <div className="inline-flex font-bold text-tcu-color-3/70 gap-1">
                         {`[##_${prefix}_rep_name_##]`}
                       </div>
                       <div className="inline-flex text-tcu-color-3/70 gap-1">
@@ -112,7 +112,7 @@ export function CommentList(props: ICommnetList.Props) {
                     <ReplyRepComp>
                       <li className="px-3 py-1.5 box-border relative w-full text-xs block">
                         <span
-                          className="text-tcu-color-1 inline gap-1 relative"
+                          className="text-tcu-color-1 inline-flex gap-1 relative"
                           data-title="reply-rp-profile-name"
                         >
                           {`[##_${prefix}_rep_name_##]`}:&nbsp;

@@ -31,7 +31,7 @@ export function upsertCollapseCategoryList(categoryName: string) {
 export function removeCollapseCategoryList(categoryName: string) {
   const collapseCategoryList = getCollapseCategoryList();
   const newCollapseCategoryList = collapseCategoryList.filter(
-    (x) => x.categoryName === categoryName
+    (x) => x.categoryName !== categoryName
   );
   localStorage.setItem(
     collapseCategoryListKey,
