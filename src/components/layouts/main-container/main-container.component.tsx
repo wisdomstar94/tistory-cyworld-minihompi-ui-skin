@@ -321,14 +321,15 @@ export function MainContainer() {
                           </tt_html_comment>
                           <div
                             className={cn(
-                              "min-w-0 min-h-0 w-full flex flex-col gap-1 relative",
+                              "w-full flex flex-col gap-1 relative",
+                              "min-w-0 min-h-0",
                               "hidden tt-body-index:flex tt-body-guestbook:flex",
                               "shrink-0 grow-0"
                             )}
                           >
                             <TitleBar>Recent Comment</TitleBar>
                             <div className="w-full" />
-                            <div className="min-w-0 min-h-0 w-full h-full overflow-y-auto text-xs">
+                            <div className="min-w-0 min-h-0 max-h-[128px] w-full h-full overflow-y-auto text-xs">
                               <ul className="w-full flex flex-wrap gap-1 relative">
                                 <s_rctrp_rep>
                                   <li className="w-full block relative">
