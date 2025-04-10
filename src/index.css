@@ -50,6 +50,9 @@
 @custom-variant board-posts-display-type-gallery-col-count-4 (.board_posts_display_type_gallery_col_count_4 &, .board_posts_display_type_gallery_col_count_4&);
 @custom-variant board-posts-display-type-gallery-col-count-5 (.board_posts_display_type_gallery_col_count_5 &, .board_posts_display_type_gallery_col_count_5&);
 
+@custom-variant board-page-notice-category-folder-display-flag-on (.board_page_notice_category_folder_display_flag_on &, .board_page_notice_category_folder_display_flag_on&);
+@custom-variant board-page-notice-category-folder-display-flag-off (.board_page_notice_category_folder_display_flag_off &, .board_page_notice_category_folder_display_flag_off&);
+
 @plugin "../tailwind.config.ts";
 
 @theme {

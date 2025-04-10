@@ -270,6 +270,21 @@
         ]]></option>
         <default>board_posts_display_type_gallery_col_count_2</default>
       </variable>
+      <variable>
+        <name>board_page_notice_category_folder_display_flag</name>
+        <label>
+          <![CDATA[ 게시판에 공지사항 카테고리 폴더 표시 여부 ]]>
+        </label>
+        <description>게시판에 공지사항 카테고리 폴더 표시 여부</description>
+        <type>SELECT</type>
+        <option><![CDATA[
+          [
+            {"name":"board_page_notice_category_folder_display_flag_on", "label":"표시", "value":"board_page_notice_category_folder_display_flag_on"},
+            {"name":"board_page_notice_category_folder_display_flag_off", "label":"미표시", "value":"board_page_notice_category_folder_display_flag_off"}
+          ]
+        ]]></option>
+        <default>board_page_notice_category_folder_display_flag_on</default>
+      </variable>
     </variablegroup>
   </variables>
   <cover>

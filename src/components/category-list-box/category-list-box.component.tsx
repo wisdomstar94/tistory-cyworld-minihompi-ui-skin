@@ -36,8 +36,19 @@ export function CategoryListBox() {
         </s_search>
         <div className="w-full" />
         [##_category_list_##]
-        <div className="w-full h-[1px] bg-tcu-color-3/20" />
-        <a href="/notice" id="category-list-notice-menu">
+        <div
+          className={cn(
+            "w-full h-[1px] bg-tcu-color-3/20",
+            "board-page-notice-category-folder-display-flag-off:!hidden"
+          )}
+        />
+        <a
+          href="/notice"
+          id="category-list-notice-menu"
+          className={cn(
+            "board-page-notice-category-folder-display-flag-off:!hidden"
+          )}
+        >
           공지사항
         </a>
       </div>

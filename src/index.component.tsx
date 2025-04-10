@@ -73,7 +73,8 @@ export default function App() {
           Var["[##_var_home_posts_display_type_##]"],
           Var["[##_var_home_posts_display_type_gallery_col_count_##]"],
           Var["[##_var_board_posts_display_type_##]"],
-          Var["[##_var_board_posts_display_type_gallery_col_count_##]"]
+          Var["[##_var_board_posts_display_type_gallery_col_count_##]"],
+          Var["[##_var_board_page_notice_category_folder_display_flag_##]"]
         )}
         style={{ backgroundSize: "" }}
       >
