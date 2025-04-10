@@ -27,7 +27,7 @@ export function CategoryListBox() {
               tt-onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"
             />
             <button
-              className="w-[40px] flex-shrink-0 flex-grow-0 text-xs flex items-center justify-center cursor-pointer bg-tcu-color-3/20"
+              className="w-[40px] shrink-0 grow-0 text-xs flex items-center justify-center cursor-pointer bg-tcu-color-3/20"
               tt-onclick="[##_search_onclick_submit_##]"
             >
               검색

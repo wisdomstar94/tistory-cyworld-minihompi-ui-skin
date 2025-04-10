@@ -15,7 +15,7 @@ export function RecentPostItem() {
       >
         <span
           className={cn(
-            "items-center flex-shrink-0 flex-grow-0",
+            "items-center shrink-0 grow-0",
             "inline-flex home-posts-display-type-gallery:hidden"
           )}
         >
@@ -55,7 +55,7 @@ export function RecentPostItem() {
         </div>
         <div
           className={cn(
-            "w-[70px] flex items-center flex-shrink-0 flex-grow-0 group-hover/rctps-rep-a:underline tabular-nums",
+            "w-[70px] flex items-center shrink-0 grow-0 group-hover/rctps-rep-a:underline tabular-nums",
             "home-posts-display-type-gallery:text-tcu-color-3/50",
             "justify-end home-posts-display-type-gallery:justify-start"
           )}

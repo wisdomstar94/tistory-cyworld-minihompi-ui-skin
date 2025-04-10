@@ -23,7 +23,7 @@ export function MainContainer() {
             className="w-full h-full absolute top-0 left-0 z-[-1]"
           >
             <div className="w-full h-full relative flex">
-              <div className="w-[270px] flex-shrink-0 flex-grow-0 bg-tcu-color-1 rounded-xl"></div>
+              <div className="w-[270px] shrink-0 grow-0 bg-tcu-color-1 rounded-xl"></div>
               <div className="min-w-0 w-full bg-tcu-color-1 rounded-xl ml-[-1px]"></div>
             </div>
           </div>
@@ -39,7 +39,7 @@ export function MainContainer() {
                 className="w-full h-full rounded-xl flex"
               >
                 {/* left */}
-                <div className="w-[246px] flex-shrink-0 flex-grow-0 h-full border-l border-t border-b border-dashed border-tcu-color-2 rounded-xl"></div>
+                <div className="w-[246px] shrink-0 grow-0 h-full border-l border-t border-b border-dashed border-tcu-color-2 rounded-xl"></div>
                 {/* right */}
                 <div className="w-full h-full border-r border-t border-b border-dashed border-tcu-color-2 rounded-xl"></div>
               </div>
@@ -52,7 +52,7 @@ export function MainContainer() {
             className="w-full h-full absolute top-0 left-0 z-[-1]"
           >
             <div className="w-full h-full relative flex box-border p-8">
-              <div className="w-[238px] flex-shrink-0 flex-grow-0 bg-tcu-color-2 rounded-xl"></div>
+              <div className="w-[238px] shrink-0 grow-0 bg-tcu-color-2 rounded-xl"></div>
               <div className="min-w-0 w-full bg-tcu-color-2 rounded-xl relative">
                 <div className="w-full h-full bg-tcu-color-3/5" />
               </div>
@@ -65,19 +65,19 @@ export function MainContainer() {
             className="w-[1px] h-[314px] absolute top-[112px] left-[270px] z-[1] flex flex-col justify-between"
           >
             <div className="flex flex-col gap-10 relative items-center w-full">
-              <div className="w-[38px] h-[12px] bg-tcu-color-6 border flex-shrink-0 flex-grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
+              <div className="w-[38px] h-[12px] bg-tcu-color-6 border shrink-0 grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
                 <div className="w-[40%] h-full bg-tcu-color-3/15"></div>
               </div>
-              <div className="w-[38px] h-[12px] bg-tcu-color-6 border flex-shrink-0 flex-grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
+              <div className="w-[38px] h-[12px] bg-tcu-color-6 border shrink-0 grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
                 <div className="w-[40%] h-full bg-tcu-color-3/15"></div>
               </div>
             </div>
 
             <div className="flex flex-col gap-10 relative items-center w-full">
-              <div className="w-[38px] h-[12px] bg-tcu-color-6 border flex-shrink-0 flex-grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
+              <div className="w-[38px] h-[12px] bg-tcu-color-6 border shrink-0 grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
                 <div className="w-[40%] h-full bg-tcu-color-3/15"></div>
               </div>
-              <div className="w-[38px] h-[12px] bg-tcu-color-6 border flex-shrink-0 flex-grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
+              <div className="w-[38px] h-[12px] bg-tcu-color-6 border shrink-0 grow-0 border-tcu-color-3/30 rounded-3xl overflow-hidden relative">
                 <div className="w-[40%] h-full bg-tcu-color-3/15"></div>
               </div>
             </div>
@@ -130,7 +130,7 @@ export function MainContainer() {
                   <div className="inline-block pl-2 font-bold text-lg leading-5 text-tcu-color-1 overflow-hidden whitespace-nowrap overflow-ellipsis">
                     [##_title_##]
                   </div>
-                  <div className="flex-shrink-0 flex-grow-0">
+                  <div className="shrink-0 grow-0">
                     <a
                       href="/manage"
                       className="inline-flex text-xs text-tcu-color-3/50 hover:underline"
@@ -142,10 +142,15 @@ export function MainContainer() {
                 </div>
 
                 {/* 3 */}
-                <div className="min-w-0 min-h-0">
-                  <div className="w-full h-full box-border px-1.5 py-2.5 border border-tcu-color-3/30 bg-tcu-color-3/10 rounded-xl">
+                <div className="min-w-0 min-h-0 relative">
+                  <div className="w-full h-full box-border px-1.5 py-2.5 border border-tcu-color-3/30 bg-tcu-color-3/10 rounded-xl relative">
                     {/* scroll container */}
-                    <div className="w-full h-full bg-tcu-color-2 rounded-lg box-border py-1.5 px-2.5 overflow-y-auto flex flex-col gap-1.5 items-start content-start">
+                    <div
+                      className={cn(
+                        "w-full h-full bg-tcu-color-2 rounded-lg box-border py-1.5 px-2.5 flex flex-col gap-1.5 items-start content-start",
+                        "min-w-0 min-h-0 relative"
+                      )}
+                    >
                       {/* 카테고리 목록 */}
                       <s_sidebar>
                         <tt_html_comment>카테고리 목록</tt_html_comment>
@@ -177,8 +182,10 @@ export function MainContainer() {
                           </tt_html_comment>
                           <div
                             className={cn(
-                              "w-full h-[120px] flex-shrink-0 flex-grow-0 relative border box-border border-tcu-color-3/10 rounded-sm overflow-hidden",
-                              "hidden tt-body-index:flex tt-body-guestbook:flex"
+                              "w-full h-[120px] shrink-0 grow-0 relative border box-border border-tcu-color-3/10 rounded-sm overflow-hidden",
+                              "hidden tt-body-index:flex tt-body-guestbook:flex",
+                              "shrink-0 grow-0",
+                              "min-w-0 min-h-0"
                             )}
                           >
                             <img
@@ -186,7 +193,7 @@ export function MainContainer() {
                               alt="프로필사진"
                               className={cn(
                                 "profile-image",
-                                "w-full h-full relative object-cover object-center flex-shrink-0"
+                                "w-full h-full relative object-cover object-center shrink-0"
                               )}
                             />
                           </div>
@@ -195,16 +202,19 @@ export function MainContainer() {
 
                       <div
                         className={cn(
-                          "w-full h-[1px] flex-shrink-0 flex-grow-0 bg-tcu-color-3/10",
-                          "hidden tt-body-index:flex tt-body-guestbook:flex"
+                          "w-full h-[1px] shrink-0 grow-0 bg-tcu-color-3/10",
+                          "hidden tt-body-index:flex tt-body-guestbook:flex",
+                          "min-w-0 min-h-0"
                         )}
                       />
 
                       {/* TODAY IS ... */}
                       <div
                         className={cn(
-                          "w-full border box-border border-tcu-color-3/10 rounded-sm p-1 text-sm flex-shrink-0 flex-grow-0 justify-center items-center",
-                          "hidden tt-body-index:flex tt-body-guestbook:flex"
+                          "w-full border box-border border-tcu-color-3/10 rounded-sm p-1 text-sm shrink-0 grow-0 justify-center items-center",
+                          "hidden tt-body-index:flex tt-body-guestbook:flex",
+                          "shrink-0 grow-0",
+                          "min-w-0 min-h-0"
                         )}
                       >
                         <div className="inline-flex gap-2">
@@ -260,8 +270,10 @@ export function MainContainer() {
                       {/* 블로그 설명 */}
                       <div
                         className={cn(
-                          "w-full h-[50px] flex-shrink-0 flex-grow-0 gap-1 relative overflow-y-auto box-border",
-                          "hidden tt-body-index:flex tt-body-guestbook:flex"
+                          "w-full shrink-0 grow-0 gap-1 relative overflow-y-auto box-border",
+                          "hidden tt-body-index:flex tt-body-guestbook:flex",
+                          "min-w-0 min-h-0",
+                          "flex-1"
                         )}
                       >
                         <div className="w-full text-xs min-w-0 min-h-0">
@@ -274,14 +286,17 @@ export function MainContainer() {
                       <div
                         className={cn(
                           "w-full",
-                          "hidden tt-body-index:flex tt-body-guestbook:flex"
+                          "hidden tt-body-index:flex tt-body-guestbook:flex",
+                          "min-w-0 min-h-0"
                         )}
                       />
 
                       <div
                         className={cn(
-                          "w-full flex-shrink-0 flex-grow-0 flex-col gap-1 relative",
-                          "hidden tt-body-index:flex tt-body-guestbook:flex"
+                          "w-full shrink-0 grow-0 flex-col gap-1 relative",
+                          "hidden tt-body-index:flex tt-body-guestbook:flex",
+                          "shrink-0 grow-0",
+                          "min-w-0 min-h-0"
                         )}
                       >
                         <TitleBar>Profile Name</TitleBar>
@@ -293,7 +308,8 @@ export function MainContainer() {
                       <div
                         className={cn(
                           "w-full",
-                          "hidden tt-body-index:flex tt-body-guestbook:flex"
+                          "hidden tt-body-index:flex tt-body-guestbook:flex",
+                          "min-w-0 min-h-0"
                         )}
                       />
 
@@ -305,8 +321,9 @@ export function MainContainer() {
                           </tt_html_comment>
                           <div
                             className={cn(
-                              "min-w-0 min-h-0 w-full h-full flex flex-col gap-1 relative",
-                              "hidden tt-body-index:flex tt-body-guestbook:flex"
+                              "min-w-0 min-h-0 w-full flex flex-col gap-1 relative",
+                              "hidden tt-body-index:flex tt-body-guestbook:flex",
+                              "shrink-0 grow-0"
                             )}
                           >
                             <TitleBar>Recent Comment</TitleBar>
@@ -325,7 +342,7 @@ export function MainContainer() {
                                           [##_rctrp_rep_desc_##]
                                         </div>
                                       </div>
-                                      <div className="w-[40px] flex items-center flex-shrink-0 flex-grow-0 justify-end group-hover/recent-comment-item:underline tabular-nums">
+                                      <div className="w-[40px] flex items-center shrink-0 grow-0 justify-end group-hover/recent-comment-item:underline tabular-nums">
                                         [##_rctrp_rep_time_##]
                                       </div>
                                     </a>

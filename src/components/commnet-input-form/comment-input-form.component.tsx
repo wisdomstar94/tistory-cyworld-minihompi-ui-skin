@@ -99,7 +99,7 @@ export function CommentInputForm(props: ICommentInputForm.Props) {
             ></textarea>
           </div>
           {/* button area */}
-          <div className="w-[80px] flex items-stretch relative flex-shrink-0 flex-grow-0">
+          <div className="w-[80px] flex items-stretch relative shrink-0 grow-0">
             <button
               tt-onclick={`[##_${prefix}_onclick_submit_##]`}
               className="w-full h-full flex items-center justify-center p-2 box-border text-xs bg-tcu-color-3/10 cursor-pointer"

@@ -29,7 +29,7 @@ export function PostsPermalinkItem(props: IPostsPermalinkItem.Props) {
                 [##_article_rep_title_##]
               </div>
               <button
-                className="text-xs border border-tcu-color-3/20 text-tcu-color-3/60 rounded-md p-0.5 cursor-pointer inline-flex flex-shrink-0 flex-grow-0 hover:bg-tcu-color-3/5 mt-1"
+                className="text-xs border border-tcu-color-3/20 text-tcu-color-3/60 rounded-md p-0.5 cursor-pointer inline-flex shrink-0 grow-0 hover:bg-tcu-color-3/5 mt-1"
                 tt-onclick="onClickPostUrlCopyButton()"
               >
                 주소복사
