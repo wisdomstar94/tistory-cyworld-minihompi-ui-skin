@@ -22,6 +22,20 @@ export default function App() {
           content="[##_page_title_##] :: [##_title_##]"
         />
         <title>[##_page_title_##] :: [##_title_##]</title>
+      </head>
+      <body
+        id="[##_body_id_##]"
+        className={cn(
+          "style-observer-target",
+          Var["[##_var_comment_profile_icon_url_flag_##]"],
+          Var["[##_var_home_posts_display_type_##]"],
+          Var["[##_var_home_posts_display_type_gallery_col_count_##]"],
+          Var["[##_var_board_posts_display_type_##]"],
+          Var["[##_var_board_posts_display_type_gallery_col_count_##]"],
+          Var["[##_var_board_page_notice_category_folder_display_flag_##]"]
+        )}
+        style={{ backgroundSize: "" }}
+      >
         <s_if_var_primary_color>
           <Style
             html={`
@@ -52,32 +66,6 @@ export default function App() {
             `}
           />
         </s_if_var_comment_profile_icon_url>
-        {/* <s_if_var_bg_image_url>
-          <Style
-            html={`
-              html {
-                background-image: url("${Var["[##_var_bg_image_url_##]"]}");
-                background-size: ${Var["[##_var_bg_image_fit_type_##]"]};
-                background-position: center center;
-                background-repeat: no-repeat;
-              }
-            `}
-          />
-        </s_if_var_bg_image_url> */}
-      </head>
-      <body
-        id="[##_body_id_##]"
-        className={cn(
-          "style-observer-target",
-          Var["[##_var_comment_profile_icon_url_flag_##]"],
-          Var["[##_var_home_posts_display_type_##]"],
-          Var["[##_var_home_posts_display_type_gallery_col_count_##]"],
-          Var["[##_var_board_posts_display_type_##]"],
-          Var["[##_var_board_posts_display_type_gallery_col_count_##]"],
-          Var["[##_var_board_page_notice_category_folder_display_flag_##]"]
-        )}
-        style={{ backgroundSize: "" }}
-      >
         <Script
           html={`
             checkPage();
