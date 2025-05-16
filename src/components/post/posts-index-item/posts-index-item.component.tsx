@@ -51,9 +51,19 @@ export function PostsIndexItem(props: IPostsIndexItem.Props) {
                 "bg-tcu-color-8"
               )}
             >
-              <MdImageNotSupported
-                className={cn("text-tcu-color-3/50 w-7 h-7")}
-              />
+              <s_if_var_gallery_default_thumbnail_url>
+                <img
+                  className={cn(
+                    "w-full h-full object-cover object-center block relative"
+                  )}
+                  src="[##_var_gallery_default_thumbnail_url_##]"
+                />
+              </s_if_var_gallery_default_thumbnail_url>
+              <s_not_var_gallery_default_thumbnail_url>
+                <MdImageNotSupported
+                  className={cn("text-tcu-color-3/50 w-7 h-7")}
+                />
+              </s_not_var_gallery_default_thumbnail_url>
             </div>
           </a>
         </td>
